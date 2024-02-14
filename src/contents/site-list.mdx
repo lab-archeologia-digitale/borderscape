@@ -1,0 +1,108 @@
+---
+title: "List of sites"
+date: "2023-10-01"
+slug: "site-list"
+description: ""
+menu_position: 3
+---
+
+import DataTb from "../modules/datatb.js"
+
+# Detailed ist of sites
+
+
+<DataTb
+  path2csv="../data/sites.csv"
+  dColumns={[
+    {
+      name: "ID",
+      selector: row => row.id,
+      sortable: true,
+    },
+    {
+      name: "Name",
+      selector: row => row.name,
+      sortable: true,
+    },
+    {
+      name: "Typology",
+      selector: row => row.type,
+      sortable: true,
+    },
+    {
+      name: "Phase 1",
+      selector: row => row.ph1,
+      sortable: true,
+    },
+    {
+      name: "Phase 2",
+      selector: row => row.ph2,
+      sortable: true,
+    },
+    {
+      name: "Phase 3",
+      selector: row => row.ph3,
+      sortable: true,
+    },
+    {
+      name: "Phase 4",
+      selector: row => row.ph4,
+      sortable: true,
+    },
+    {
+      name: "Phase 5",
+      selector: row => row.ph5,
+      sortable: true,
+    },
+    {
+      name: "Phase 6",
+      selector: row => row.ph6,
+      sortable: true,
+    },
+    {
+      name: "Culture",
+      selector: row => row.culture,
+      sortable: true,
+    },
+    {
+      name: "Size",
+      selector: row => row.size,
+      sortable: true,
+    },
+    {
+      name: "Codex",
+      selector: row => row.codex,
+      sortable: true,
+    },
+    {
+      name: "Accuracy",
+      selector: row => row.accuracy,
+      sortable: true,
+    },
+    {
+      name: "Bibliography",
+      selector: row => row.bibliography,
+      sortable: true,
+    },
+    {
+      name: "Project",
+      selector: row => row.project,
+      sortable: true,
+    },
+    {
+      name: "Locality",
+      selector: row => row.locality,
+      sortable: true,
+    },
+    {
+      name: "Macrotype",
+      selector: row => row.macrotype,
+      sortable: true,
+    },
+    {
+      name: "C14",
+      selector: row => row.c14,
+      sortable: true,
+    },
+  ]}
+/>
