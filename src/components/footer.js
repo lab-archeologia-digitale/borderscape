@@ -94,7 +94,7 @@ const FooterSection = () => {
             </Link>
           </div>
           <div className="p-3">
-            <Link href="https://lad.saras.uniroma1.it">
+            <a href="https://lad.saras.uniroma1.it" target="_blank" rel="noreferrer noopener">
               <StaticImage
                 src="../images/scms-lad.png"
                 width={100}
@@ -103,7 +103,7 @@ const FooterSection = () => {
                 alt="sCMS by LAD"
                 className="img-fluid"
               />
-            </Link>
+            </a>
           </div>
         </div>
         <div className="text-center">
