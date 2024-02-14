@@ -7,8 +7,6 @@ const BaseLayer = ({
   url,
   attribution
 }) => {
-  console.log(name)
-  
   return (
     <LayersControl.BaseLayer
       checked={ checked }
