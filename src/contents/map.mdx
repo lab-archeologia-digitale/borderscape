@@ -13,9 +13,13 @@ import { MapComp, BaseLayer, VectorLayer } from "../modules/myMap/myMap.js"
 
 ## Sites by (macro-) typology
 
+---
+
+<div className="" style={{ fontSize: '.9em'}}>
 **Legend**
 
-<div className="row">
+<div className="d-flex flex">
+
   {
     [
       ['Campsite', '#00a5e3'],
@@ -26,11 +30,9 @@ import { MapComp, BaseLayer, VectorLayer } from "../modules/myMap/myMap.js"
       ['Rock Art', '#c05780'],
       ['Settlement', '#cff800']
     ].map( e => {
-      console.log(e)
-      return <>
-      <div className="col">
+      return <div className="p-2">
         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style={{
-          width: '1em',
+          width: '.6em',
           display: 'inline',
           marginRight: '.5rem',
           position: 'relative',
@@ -40,9 +42,10 @@ import { MapComp, BaseLayer, VectorLayer } from "../modules/myMap/myMap.js"
         </svg>
         <span>{e[0]}</span>
         </div>
-      </>
     })
   }
+</div>
+---
 </div>
 
 
@@ -53,11 +56,6 @@ import { MapComp, BaseLayer, VectorLayer } from "../modules/myMap/myMap.js"
   center= "24.173,32.911,9"
   baseLayers="OSM, EsriStreets, EsriTopo, GoogleSatellite,GoogleRoadmap,GoogleTerrain,GoogleAlteredRoadmap, GoogleTerrainOnly, GoogleHybrid, CartoDb, StamenTerrain, OSMMapnick, OSMCycle, EsriSatellite"
   >
-  <BaseLayer 
-    name="Corona"
-    checked={true}
-    url="http://localhost:8000/corona/{z}/{x}/{y}.png"
-  />
   
   <VectorLayer 
     name="Siti"
