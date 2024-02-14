@@ -1,0 +1,353 @@
+---
+title: "The Web-based map"
+date: "2024-02-13"
+slug: "map"
+description: "An easy to use component for building powerful and fully customizable maps"
+menu_position: 1
+---
+
+
+# The WebGIS
+
+import { MapComp, BaseLayer, VectorLayer } from "../modules/myMap/myMap.js"
+
+## Sites by (macro-) typology
+
+**Legend**
+
+<div className="row">
+  {
+    [
+      ['Campsite', '#00a5e3'],
+      ['Cemetery', '#8dd7bf'],
+      ['Inscription', '#ff90c5'],
+      ['Isolated Building/Feature', '#ff5768'],
+      ['Isolated/Scatter of Finds', '#ffbf65'],
+      ['Rock Art', '#c05780'],
+      ['Settlement', '#cff800']
+    ].map( e => {
+      console.log(e)
+      return <>
+      <div className="col">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style={{
+          width: '1em',
+          display: 'inline',
+          marginRight: '.5rem',
+          position: 'relative',
+          verticalAlign: 'middle'
+        }}>
+          <circle cx="50%" cy="50%" r="50%" fill={e[1]} />
+        </svg>
+        <span>{e[0]}</span>
+        </div>
+      </>
+    })
+  }
+</div>
+
+
+<MapComp
+  height="600px"
+  path2geojson="../data/toponimi.geojson"
+  name="Siti"
+  center= "24.173,32.911,9"
+  baseLayers="OSM, EsriStreets, EsriTopo, GoogleSatellite,GoogleRoadmap,GoogleTerrain,GoogleAlteredRoadmap, GoogleTerrainOnly, GoogleHybrid, CartoDb, StamenTerrain, OSMMapnick, OSMCycle, EsriSatellite"
+  >
+  <BaseLayer 
+    name="Corona"
+    checked={true}
+    url="http://localhost:8000/corona/{z}/{x}/{y}.png"
+  />
+  
+  <VectorLayer 
+    name="Siti"
+    path2geojson="../data/sites.geojson"
+    popupTemplate={
+      (attribs) => { return `<p><strong>${attribs.id}. ${attribs.name} (${attribs.locality})</strong>
+      <br />— ${attribs.type}
+      <hr />${attribs.bibliography}` }
+    }
+    pointToLayer={
+      (f, ll) => {
+
+        const mapType = {
+          'Campsite': '#00a5e3',
+          'Cemetery': '#8dd7bf',
+          'Inscription': '#ff90c5',
+          'Isolated Building/Feature': '#ff5768',
+          'Isolated/Scatter of Finds': '#ffbf65',
+          'Rock Art': '#c05780',
+          'Settlement': '#cff800'
+        }
+        return L.circleMarker(ll, {
+          radius: 4,
+          fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+          color: "#000",
+          weight: 1,
+          opacity: 1,
+          fillOpacity: 0.8
+        });
+      }}
+  />
+</MapComp>
+
+---
+
+## Sites by phase
+
+<div className="row">
+  <div className="col">
+    ### Phase 1
+    <MapComp
+  height="400px"
+  path2geojson="../data/toponimi.geojson"
+  name="Siti"
+  center= "24.173,32.911,9"
+  baseLayers="OSM, EsriStreets, EsriTopo, GoogleSatellite,GoogleRoadmap,GoogleTerrain,GoogleAlteredRoadmap, GoogleTerrainOnly, GoogleHybrid, CartoDb, StamenTerrain, OSMMapnick, OSMCycle, EsriSatellite"
+  >
+  
+  <VectorLayer 
+    name="Siti"
+    path2geojson="../data/sites.geojson"
+    popupTemplate={
+      (attribs) => { return `<p><strong>${attribs.id}. ${attribs.name} (${attribs.locality})</strong>
+      <br />— ${attribs.type}
+      <hr />${attribs.bibliography}` }
+    }
+    pointToLayer={
+      (f, ll) => {
+        const mapType = {
+          'Campsite': '#00a5e3',
+          'Cemetery': '#8dd7bf',
+          'Inscription': '#ff90c5',
+          'Isolated Building/Feature': '#ff5768',
+          'Isolated/Scatter of Finds': '#ffbf65',
+          'Rock Art': '#c05780',
+          'Settlement': '#cff800'
+        }
+        return L.circleMarker(ll, {
+          radius: 4,
+          fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+          color: "#000",
+          weight: 1,
+          opacity: 1,
+          fillOpacity: 0.8
+        });
+      }}
+      filter={f => (f.properties.ph1 === 'X') }
+  />
+</MapComp>
+  </div>
+  <div className="col">
+    ### Phase 2
+    <MapComp
+  height="400px"
+  path2geojson="../data/toponimi.geojson"
+  name="Siti"
+  center= "24.173,32.911,9"
+  baseLayers="OSM, EsriStreets, EsriTopo, GoogleSatellite,GoogleRoadmap,GoogleTerrain,GoogleAlteredRoadmap, GoogleTerrainOnly, GoogleHybrid, CartoDb, StamenTerrain, OSMMapnick, OSMCycle, EsriSatellite"
+  >
+  
+  <VectorLayer 
+    name="Siti"
+    path2geojson="../data/sites.geojson"
+    popupTemplate={
+      (attribs) => { return `<p><strong>${attribs.id}. ${attribs.name} (${attribs.locality})</strong>
+      <br />— ${attribs.type}
+      <hr />${attribs.bibliography}` }
+    }
+    pointToLayer={
+      (f, ll) => {
+        const mapType = {
+          'Campsite': '#00a5e3',
+          'Cemetery': '#8dd7bf',
+          'Inscription': '#ff90c5',
+          'Isolated Building/Feature': '#ff5768',
+          'Isolated/Scatter of Finds': '#ffbf65',
+          'Rock Art': '#c05780',
+          'Settlement': '#cff800'
+        }
+        return L.circleMarker(ll, {
+          radius: 4,
+          fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+          color: "#000",
+          weight: 1,
+          opacity: 1,
+          fillOpacity: 0.8
+        });
+      }}
+      filter={f => (f.properties.ph2 === 'X') }
+  />
+</MapComp>
+  </div>
+  <div className="col">
+    ### Phase 3
+    <MapComp
+  height="400px"
+  path2geojson="../data/toponimi.geojson"
+  name="Siti"
+  center= "24.173,32.911,9"
+  baseLayers="OSM, EsriStreets, EsriTopo, GoogleSatellite,GoogleRoadmap,GoogleTerrain,GoogleAlteredRoadmap, GoogleTerrainOnly, GoogleHybrid, CartoDb, StamenTerrain, OSMMapnick, OSMCycle, EsriSatellite"
+  >
+  
+  <VectorLayer 
+    name="Siti"
+    path2geojson="../data/sites.geojson"
+    popupTemplate={
+      (attribs) => { return `<p><strong>${attribs.id}. ${attribs.name} (${attribs.locality})</strong>
+      <br />— ${attribs.type}
+      <hr />${attribs.bibliography}` }
+    }
+    pointToLayer={
+      (f, ll) => {
+        const mapType = {
+          'Campsite': '#00a5e3',
+          'Cemetery': '#8dd7bf',
+          'Inscription': '#ff90c5',
+          'Isolated Building/Feature': '#ff5768',
+          'Isolated/Scatter of Finds': '#ffbf65',
+          'Rock Art': '#c05780',
+          'Settlement': '#cff800'
+        }
+        return L.circleMarker(ll, {
+          radius: 4,
+          fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+          color: "#000",
+          weight: 1,
+          opacity: 1,
+          fillOpacity: 0.8
+        });
+      }}
+      filter={f => (f.properties.ph3 === 'X') }
+  />
+</MapComp>
+  </div>
+</div>
+<div className="row mt-5">
+  <div className="col">
+    ### Phase 4
+    <MapComp
+  height="400px"
+  path2geojson="../data/toponimi.geojson"
+  name="Siti"
+  center= "24.173,32.911,9"
+  baseLayers="OSM, EsriStreets, EsriTopo, GoogleSatellite,GoogleRoadmap,GoogleTerrain,GoogleAlteredRoadmap, GoogleTerrainOnly, GoogleHybrid, CartoDb, StamenTerrain, OSMMapnick, OSMCycle, EsriSatellite"
+  >
+  
+  <VectorLayer 
+    name="Siti"
+    path2geojson="../data/sites.geojson"
+    popupTemplate={
+      (attribs) => { return `<p><strong>${attribs.id}. ${attribs.name} (${attribs.locality})</strong>
+      <br />— ${attribs.type}
+      <hr />${attribs.bibliography}` }
+    }
+    pointToLayer={
+      (f, ll) => {
+        const mapType = {
+          'Campsite': '#00a5e3',
+          'Cemetery': '#8dd7bf',
+          'Inscription': '#ff90c5',
+          'Isolated Building/Feature': '#ff5768',
+          'Isolated/Scatter of Finds': '#ffbf65',
+          'Rock Art': '#c05780',
+          'Settlement': '#cff800'
+        }
+        return L.circleMarker(ll, {
+          radius: 4,
+          fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+          color: "#000",
+          weight: 1,
+          opacity: 1,
+          fillOpacity: 0.8
+        });
+      }}
+      filter={f => (f.properties.ph4 === 'X') }
+  />
+</MapComp>
+  </div>
+  <div className="col">
+    ### Phase 5
+    <MapComp
+  height="400px"
+  path2geojson="../data/toponimi.geojson"
+  name="Siti"
+  center= "24.173,32.911,9"
+  baseLayers="OSM, EsriStreets, EsriTopo, GoogleSatellite,GoogleRoadmap,GoogleTerrain,GoogleAlteredRoadmap, GoogleTerrainOnly, GoogleHybrid, CartoDb, StamenTerrain, OSMMapnick, OSMCycle, EsriSatellite"
+  >
+  
+  <VectorLayer 
+    name="Siti"
+    path2geojson="../data/sites.geojson"
+    popupTemplate={
+      (attribs) => { return `<p><strong>${attribs.id}. ${attribs.name} (${attribs.locality})</strong>
+      <br />— ${attribs.type}
+      <hr />${attribs.bibliography}` }
+    }
+    pointToLayer={
+      (f, ll) => {
+        const mapType = {
+          'Campsite': '#00a5e3',
+          'Cemetery': '#8dd7bf',
+          'Inscription': '#ff90c5',
+          'Isolated Building/Feature': '#ff5768',
+          'Isolated/Scatter of Finds': '#ffbf65',
+          'Rock Art': '#c05780',
+          'Settlement': '#cff800'
+        }
+        return L.circleMarker(ll, {
+          radius: 4,
+          fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+          color: "#000",
+          weight: 1,
+          opacity: 1,
+          fillOpacity: 0.8
+        });
+      }}
+      filter={f => (f.properties.ph5 === 'X') }
+  />
+</MapComp>
+  </div>
+  <div className="col">
+    ### Phase 6
+    <MapComp
+  height="400px"
+  path2geojson="../data/toponimi.geojson"
+  name="Siti"
+  center= "24.173,32.911,9"
+  baseLayers="OSM, EsriStreets, EsriTopo, GoogleSatellite,GoogleRoadmap,GoogleTerrain,GoogleAlteredRoadmap, GoogleTerrainOnly, GoogleHybrid, CartoDb, StamenTerrain, OSMMapnick, OSMCycle, EsriSatellite"
+  >
+  
+  <VectorLayer 
+    name="Siti"
+    path2geojson="../data/sites.geojson"
+    popupTemplate={
+      (attribs) => { return `<p><strong>${attribs.id}. ${attribs.name} (${attribs.locality})</strong>
+      <br />— ${attribs.type}
+      <hr />${attribs.bibliography}` }
+    }
+    pointToLayer={
+      (f, ll) => {
+        const mapType = {
+          'Campsite': '#00a5e3',
+          'Cemetery': '#8dd7bf',
+          'Inscription': '#ff90c5',
+          'Isolated Building/Feature': '#ff5768',
+          'Isolated/Scatter of Finds': '#ffbf65',
+          'Rock Art': '#c05780',
+          'Settlement': '#cff800'
+        }
+        return L.circleMarker(ll, {
+          radius: 4,
+          fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+          color: "#000",
+          weight: 1,
+          opacity: 1,
+          fillOpacity: 0.8
+        });
+      }}
+      filter={f => (f.properties.ph6 === 'X') }
+  />
+</MapComp>
+  </div>
+</div>
