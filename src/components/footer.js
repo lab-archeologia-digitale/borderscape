@@ -8,49 +8,111 @@ const FooterSection = () => {
   return (
     <Footer>
       <Container>
-        <div className="d-flex flex-row align-items-center mb-3">
+        <div className="d-flex justify-content-center flex-row align-items-center mb-3">
           <div className="p-3">
             <Link to="/">
+              <StaticImage
+                src="../images/borderscape.jpg"
+                width={100}
+                quality={80}
+                formats={["AUTO", "WEBP"]}
+                alt="Borderscapes"
+                className="img-fluid"
+              />
+            </Link>
+          </div>
+          <div className="p-3">
+            <Link to="/">
+              <StaticImage
+                src="../images/ncn.jpg"
+                width={100}
+                quality={80}
+                formats={["AUTO", "WEBP"]}
+                alt="NCN"
+                className="img-fluid"
+              />
+            </Link>
+          </div>
+          <div className="p-3">
+            <Link to="/">
+              <StaticImage
+                src="../images/pols.png"
+                width={100}
+                quality={80}
+                formats={["AUTO", "WEBP"]}
+                alt="POLS"
+                className="img-fluid"
+              />
+            </Link>
+          </div>
+          <div className="p-3">
+            <Link to="/">
+              <StaticImage
+                src="../images/iksiopan.gif"
+                width={100}
+                quality={80}
+                formats={["AUTO", "WEBP"]}
+                alt="IKSIOPAN"
+                className="img-fluid"
+              />
+            </Link>
+          </div>
+          <div className="p-3">
+            <Link to="/">
+              <StaticImage
+                src="../images/pan.png"
+                width={100}
+                quality={80}
+                formats={["AUTO", "WEBP"]}
+                alt="PAN"
+                className="img-fluid"
+              />
+            </Link>
+          </div>
+          <div className="p-3">
+            <Link to="/">
+              <StaticImage
+                src="../images/dlr.png"
+                width={100}
+                quality={80}
+                formats={["AUTO", "WEBP"]}
+                alt="DLR"
+                className="img-fluid"
+              />
+            </Link>
+          </div>
+          <div className="p-3">
+            <Link to="/">
+              <StaticImage
+                src="../images/akap.jpg"
+                width={100}
+                quality={80}
+                formats={["AUTO", "WEBP"]}
+                alt="AKAP"
+                className="img-fluid"
+              />
+            </Link>
+          </div>
+          <div className="p-3">
+            <Link href="https://lad.saras.uniroma1.it">
               <StaticImage
                 src="../images/scms-lad.png"
                 width={100}
                 quality={80}
                 formats={["AUTO", "WEBP"]}
-                alt="LAD: Laboratorio di Archeologia Digitale alla Sapienza"
+                alt="sCMS by LAD"
                 className="img-fluid"
               />
             </Link>
           </div>
-          <div className="p-3 border-start border-primary">
+        </div>
+        <div className="text-center">
             <p className="p-s-3">
-              <strong>s:CMS</strong> è un progetto ideato e sviluppato dal{" "}
+              <strong>Borderscapes</strong>
               <br />
-              <a
-                href="https://lad.saras.uniroma1.it"
-                target="_blank"
-                rel="noreferrer"
-              >
-                LAD: Laboratorio di Archeologia Digitale alla Sapienza
-              </a>
-              <br />
-              <a
-                href="https://github.com/lab-archeologia-digitale/gatsby-directus-ui"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Code
-              </a>
-              &nbsp;|&nbsp;
-              <a
-                href="https://github.com/lab-archeologia-digitale/gatsby-directus-ui/issues"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Issues
-              </a>
+              WebGIS of Egyptian State Formation and the Changing Socio-Spatial Landscape of the Nile First Cataract Region in the 4th and 3rd millennia BCE
             </p>
           </div>
-        </div>
       </Container>
     </Footer>
   )

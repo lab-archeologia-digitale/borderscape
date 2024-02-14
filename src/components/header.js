@@ -10,8 +10,8 @@ const HeaderSection = ({ siteTitle }) => (
       <div className="d-flex flex-row align-items-center mb-3">
         <Link to={ withPrefix('/') }>
           <StaticImage
-            src="../images/scms-lad.png"
-            width={150}
+            src="../images/borderscape.jpg"
+            width={250}
             quality={80}
             formats={["AUTO", "WEBP"]}
             alt={siteTitle}
@@ -19,8 +19,7 @@ const HeaderSection = ({ siteTitle }) => (
           />
         </Link>
         <div className="ms-3">
-          S:CMS | Static site Content Managemt System is developend and
-          maintained by LAD: Laboratorio di Archeologia Digitale alla Sapienza
+        WebGIS of Egyptian State Formation and the Changing Socio-Spatial Landscape of the Nile First Cataract Region in the 4th and 3rd millennia BCE
         </div>
       </div>
     </Container>
