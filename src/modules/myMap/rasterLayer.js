@@ -1,7 +1,7 @@
 import React from "react"
 import { TileLayer, LayersControl } from "react-leaflet"
 
-const BaseLayer = ({ name, checked, url, attribution, asOverlay }) => {
+const RasterLayer = ({ name, checked, url, attribution, asOverlay }) => {
   if (asOverlay) {
     return (
       <LayersControl.Overlay checked={checked} name={name}>
@@ -16,4 +16,4 @@ const BaseLayer = ({ name, checked, url, attribution, asOverlay }) => {
   )
 }
 
-export { BaseLayer }
+export { RasterLayer }

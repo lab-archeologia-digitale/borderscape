@@ -1,6 +1,6 @@
 import React from "react"
 import { MapContainer, LayersControl } from "react-leaflet"
-import { BaseLayer } from "./baseLayer"
+import { RasterLayer } from "./rasterLayer"
 import { defaultBaseLayers } from "./defaultBaseLayers"
 
 const MapComp = ({ height, center, baseLayers, children }) => {
@@ -24,7 +24,7 @@ const MapComp = ({ height, center, baseLayers, children }) => {
               return <></>
             }
             return (
-              <BaseLayer
+              <RasterLayer
                 key={index}
                 name={defaultBaseLayers[bl].name}
                 url={defaultBaseLayers[bl].url}

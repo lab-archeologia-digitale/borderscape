@@ -9,7 +9,7 @@ menu_position: 2
 
 # The WebGIS
 
-import { MapComp, BaseLayer, VectorLayer } from "../modules/myMap/myMap.js"
+import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
 
 ## Sites by (macro-) typology
 
@@ -24,7 +24,7 @@ import { MapComp, BaseLayer, VectorLayer } from "../modules/myMap/myMap.js"
   center= "24.173,32.911,9"
   baseLayers="EsriSatellite, EsriTopo, OSM">
 
-  <BaseLayer 
+  <RasterLayer 
     name="Corona"
     url="https://swift.cloud.garr.it/swift/v1/corona_sudan/{z}/{x}/{y}.png"
     checked={true}
