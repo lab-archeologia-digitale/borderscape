@@ -9,7 +9,7 @@ const FooterSection = () => {
     <Footer>
       <Container>
         <Row>
-          <Col xs={4} sm={{ span: 1, offset: 1}}>
+          <Col xs={4} sm={{ span: 2, offset: 1}}>
             <a
               href="https://www.borderscapeproject.org/"
               target="_blank"
@@ -18,11 +18,8 @@ const FooterSection = () => {
             >
               <StaticImage
                 src="../images/borderscape.svg"
-                width={100}
-                quality={80}
                 formats={["AUTO", "WEBP"]}
                 alt="Borderscapes Borderscape project"
-                className="img-fluid"
               />
             </a>
           </Col>
@@ -35,8 +32,6 @@ const FooterSection = () => {
             >
               <StaticImage
                 src="../images/norway-grants.svg"
-                width={100}
-                quality={80}
                 formats={["AUTO", "WEBP"]}
                 alt="Norway Grants"
                 className="img-fluid"
@@ -51,12 +46,9 @@ const FooterSection = () => {
               title="Narodowe Centrum Nauki"
             >
               <StaticImage
-                src="../images/ncn.jpg"
-                width={100}
-                quality={80}
+                src="../images/ncn.svg"
                 formats={["AUTO", "WEBP"]}
                 alt="Narodowe Centrum Nauki"
-                className="img-fluid"
               />
             </a>
           </Col>
@@ -69,11 +61,8 @@ const FooterSection = () => {
             >
               <StaticImage
                 src="../images/pols.svg"
-                width={100}
-                quality={80}
                 formats={["AUTO", "WEBP"]}
                 alt="POLS (The POLS call is part of the Basic Research Programme operated by the National Science Centre under the EEA and Norway Grants and is prepared in cooperation with the Research Council of Norway)"
-                className="img-fluid"
               />
             </a>
           </Col>
@@ -86,11 +75,8 @@ const FooterSection = () => {
             >
               <StaticImage
                 src="../images/iksiopan.svg"
-                width={100}
-                quality={80}
                 formats={["AUTO", "WEBP"]}
                 alt="IKSIO PAN (Instytut Kultur Śródziemnomorskich i Orientalnych Polskiej Akademii Nauk)"
-                className="img-fluid"
               />
             </a>
           </Col>
@@ -103,11 +89,8 @@ const FooterSection = () => {
             >
               <StaticImage
                 src="../images/pan.svg"
-                width={100}
-                quality={80}
                 formats={["AUTO", "WEBP"]}
                 alt="PAN (Polska Akademia Nauk)"
-                className="img-fluid"
               />
             </a>
           </Col>
@@ -120,11 +103,8 @@ const FooterSection = () => {
             >
               <StaticImage
                 src="../images/dlr.svg"
-                width={100}
-                quality={80}
                 formats={["AUTO", "WEBP"]}
                 alt="Deutsches Zentrum für Luft- und Raumfahrt"
-                className="img-fluid"
               />
             </a>
           </Col>
@@ -137,11 +117,8 @@ const FooterSection = () => {
             >
               <StaticImage
                 src="../images/akap.svg"
-                width={100}
-                quality={80}
                 formats={["AUTO", "WEBP"]}
                 alt="AKAP"
-                className="img-fluid"
               />
             </a>
           </Col>
@@ -153,11 +130,8 @@ const FooterSection = () => {
             >
               <StaticImage
                 src="../images/scms-lad.png"
-                width={100}
-                quality={80}
                 formats={["AUTO", "WEBP"]}
                 alt="sCMS by LAD"
-                className="img-fluid"
               />
             </a>
           </Col>
