@@ -2,14 +2,13 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 import { Container } from "react-bootstrap"
-import { Row, Col } from "react-bootstrap"
 
 const FooterSection = () => {
   return (
     <Footer>
       <Container>
-        <Row>
-          <Col xs={4} sm={{ span: 2, offset: 1}}>
+        <div className="d-flex flex-row justify-content-around align-items-center flex-wrap">
+          <div>
             <a
               href="https://www.borderscapeproject.org/"
               target="_blank"
@@ -20,10 +19,12 @@ const FooterSection = () => {
                 src="../images/borderscape.svg"
                 formats={["AUTO", "WEBP"]}
                 alt="Borderscapes Borderscape project"
+                width={200}
+                className="img-fluid"
               />
             </a>
-          </Col>
-          <Col xs={4} sm={1}>
+          </div>
+          <div>
             <a
               href="https://eeagrants.org/"
               target="_blank"
@@ -34,11 +35,12 @@ const FooterSection = () => {
                 src="../images/norway-grants.svg"
                 formats={["AUTO", "WEBP"]}
                 alt="Norway Grants"
+                width={100}
                 className="img-fluid"
               />
             </a>
-          </Col>
-          <Col xs={4} sm={1}>
+          </div>
+          <div>
             <a
               href="https://www.ncn.gov.pl/"
               target="_blank"
@@ -49,10 +51,12 @@ const FooterSection = () => {
                 src="../images/ncn.svg"
                 formats={["AUTO", "WEBP"]}
                 alt="Narodowe Centrum Nauki"
+                width={150}
+                className="img-fluid"
               />
             </a>
-          </Col>
-          <Col xs={4} sm={1}>
+          </div>
+          <div>
             <a
               href="https://ncn.gov.pl/en/ogloszenia/konkursy/pols"
               target="_blank"
@@ -63,10 +67,12 @@ const FooterSection = () => {
                 src="../images/pols.svg"
                 formats={["AUTO", "WEBP"]}
                 alt="POLS (The POLS call is part of the Basic Research Programme operated by the National Science Centre under the EEA and Norway Grants and is prepared in cooperation with the Research Council of Norway)"
+                width={80}
+                className="img-fluid"
               />
             </a>
-          </Col>
-          <Col xs={4} sm={1}>
+          </div>
+          <div>
             <a
               href="http://iksiopan.pl/index.php/pl/"
               target="_blank"
@@ -77,10 +83,12 @@ const FooterSection = () => {
                 src="../images/iksiopan.svg"
                 formats={["AUTO", "WEBP"]}
                 alt="IKSIO PAN (Instytut Kultur Śródziemnomorskich i Orientalnych Polskiej Akademii Nauk)"
+                width={150}
+                className="img-fluid"
               />
             </a>
-          </Col>
-          <Col xs={4} sm={1}>
+          </div>
+          <div>
             <a
               href="https://pan.pl/"
               target="_blank"
@@ -91,10 +99,12 @@ const FooterSection = () => {
                 src="../images/pan.svg"
                 formats={["AUTO", "WEBP"]}
                 alt="PAN (Polska Akademia Nauk)"
+                width={100}
+                className="img-fluid"
               />
             </a>
-          </Col>
-          <Col xs={4} sm={1}>
+          </div>
+          <div>
             <a
               href="https://www.dlr.de/en/"
               target="_blank"
@@ -105,10 +115,12 @@ const FooterSection = () => {
                 src="../images/dlr.svg"
                 formats={["AUTO", "WEBP"]}
                 alt="Deutsches Zentrum für Luft- und Raumfahrt"
+                width={200}
+                className="img-fluid"
               />
             </a>
-          </Col>
-          <Col xs={4} sm={1}>
+          </div>
+          <div>
             <a
               href="https://www.akapegypt.org/"
               target="_blank"
@@ -119,10 +131,12 @@ const FooterSection = () => {
                 src="../images/akap.svg"
                 formats={["AUTO", "WEBP"]}
                 alt="AKAP"
+                width={90}
+                className="img-fluid"
               />
             </a>
-          </Col>
-          <Col xs={4} sm={1}>
+          </div>
+          <div>
             <a
               href="https://lad.saras.uniroma1.it"
               target="_blank"
@@ -132,11 +146,14 @@ const FooterSection = () => {
                 src="../images/scms-lad.png"
                 formats={["AUTO", "WEBP"]}
                 alt="sCMS by LAD"
+                width={100}
+                className="img-fluid"
               />
             </a>
-          </Col>
-        </Row>
-        <div className="text-center">
+          </div>
+        </div>
+
+        <div className="text-center mt-3 pt-3 border-top">
           <p className="p-s-3">
             <strong>Borderscapes</strong>
             <br />
