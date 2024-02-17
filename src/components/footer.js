@@ -1,100 +1,156 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
-import { Link } from "gatsby"
 import { Container } from "react-bootstrap"
+import { Row, Col } from "react-bootstrap"
 
 const FooterSection = () => {
   return (
     <Footer>
       <Container>
-        <div className="d-flex justify-content-center flex-row align-items-center mb-3">
-          <div className="p-3">
-            <Link to="/">
+        <Row>
+          <Col xs={4} sm={{ span: 1, offset: 1}}>
+            <a
+              href="https://www.borderscapeproject.org/"
+              target="_blank"
+              rel="noreferrer nooper"
+              title="Borderscape project"
+            >
               <StaticImage
-                src="../images/borderscape.jpg"
+                src="../images/borderscape.svg"
                 width={100}
                 quality={80}
                 formats={["AUTO", "WEBP"]}
-                alt="Borderscapes"
+                alt="Borderscapes Borderscape project"
                 className="img-fluid"
               />
-            </Link>
-          </div>
-          <div className="p-3">
-            <Link to="/">
+            </a>
+          </Col>
+          <Col xs={4} sm={1}>
+            <a
+              href="https://eeagrants.org/"
+              target="_blank"
+              rel="noreferrer nooper"
+              title="Norway Grants"
+            >
+              <StaticImage
+                src="../images/norway-grants.svg"
+                width={100}
+                quality={80}
+                formats={["AUTO", "WEBP"]}
+                alt="Norway Grants"
+                className="img-fluid"
+              />
+            </a>
+          </Col>
+          <Col xs={4} sm={1}>
+            <a
+              href="https://www.ncn.gov.pl/"
+              target="_blank"
+              rel="noreferrer nooper"
+              title="Narodowe Centrum Nauki"
+            >
               <StaticImage
                 src="../images/ncn.jpg"
                 width={100}
                 quality={80}
                 formats={["AUTO", "WEBP"]}
-                alt="NCN"
+                alt="Narodowe Centrum Nauki"
                 className="img-fluid"
               />
-            </Link>
-          </div>
-          <div className="p-3">
-            <Link to="/">
+            </a>
+          </Col>
+          <Col xs={4} sm={1}>
+            <a
+              href="https://ncn.gov.pl/en/ogloszenia/konkursy/pols"
+              target="_blank"
+              rel="noreferrer nooper"
+              title="POLS (The POLS call is part of the Basic Research Programme operated by the National Science Centre under the EEA and Norway Grants and is prepared in cooperation with the Research Council of Norway)"
+            >
               <StaticImage
-                src="../images/pols.png"
+                src="../images/pols.svg"
                 width={100}
                 quality={80}
                 formats={["AUTO", "WEBP"]}
-                alt="POLS"
+                alt="POLS (The POLS call is part of the Basic Research Programme operated by the National Science Centre under the EEA and Norway Grants and is prepared in cooperation with the Research Council of Norway)"
                 className="img-fluid"
               />
-            </Link>
-          </div>
-          <div className="p-3">
-            <Link to="/">
+            </a>
+          </Col>
+          <Col xs={4} sm={1}>
+            <a
+              href="http://iksiopan.pl/index.php/pl/"
+              target="_blank"
+              rel="noreferrer nooper"
+              title="IKSIO PAN (Instytut Kultur Śródziemnomorskich i Orientalnych Polskiej Akademii Nauk)"
+            >
               <StaticImage
-                src="../images/iksiopan.gif"
+                src="../images/iksiopan.svg"
                 width={100}
                 quality={80}
                 formats={["AUTO", "WEBP"]}
-                alt="IKSIOPAN"
+                alt="IKSIO PAN (Instytut Kultur Śródziemnomorskich i Orientalnych Polskiej Akademii Nauk)"
                 className="img-fluid"
               />
-            </Link>
-          </div>
-          <div className="p-3">
-            <Link to="/">
+            </a>
+          </Col>
+          <Col xs={4} sm={1}>
+            <a
+              href="https://pan.pl/"
+              target="_blank"
+              rel="noreferrer nooper"
+              title="PAN (Polska Akademia Nauk)"
+            >
               <StaticImage
-                src="../images/pan.png"
+                src="../images/pan.svg"
                 width={100}
                 quality={80}
                 formats={["AUTO", "WEBP"]}
-                alt="PAN"
+                alt="PAN (Polska Akademia Nauk)"
                 className="img-fluid"
               />
-            </Link>
-          </div>
-          <div className="p-3">
-            <Link to="/">
+            </a>
+          </Col>
+          <Col xs={4} sm={1}>
+            <a
+              href="https://www.dlr.de/en/"
+              target="_blank"
+              rel="noreferrer nooper"
+              title="Deutsches Zentrum für Luft- und Raumfahrt"
+            >
               <StaticImage
-                src="../images/dlr.png"
+                src="../images/dlr.svg"
                 width={100}
                 quality={80}
                 formats={["AUTO", "WEBP"]}
-                alt="DLR"
+                alt="Deutsches Zentrum für Luft- und Raumfahrt"
                 className="img-fluid"
               />
-            </Link>
-          </div>
-          <div className="p-3">
-            <Link to="/">
+            </a>
+          </Col>
+          <Col xs={4} sm={1}>
+            <a
+              href="https://www.akapegypt.org/"
+              target="_blank"
+              rel="noreferrer nooper"
+              title="AKAP"
+            >
               <StaticImage
-                src="../images/akap.jpg"
+                src="../images/akap.svg"
                 width={100}
                 quality={80}
                 formats={["AUTO", "WEBP"]}
                 alt="AKAP"
                 className="img-fluid"
               />
-            </Link>
-          </div>
-          <div className="p-3">
-            <a href="https://lad.saras.uniroma1.it" target="_blank" rel="noreferrer noopener">
+            </a>
+          </Col>
+          <Col xs={4} sm={1}>
+            <a
+              href="https://lad.saras.uniroma1.it"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <StaticImage
                 src="../images/scms-lad.png"
                 width={100}
@@ -104,15 +160,17 @@ const FooterSection = () => {
                 className="img-fluid"
               />
             </a>
-          </div>
-        </div>
+          </Col>
+        </Row>
         <div className="text-center">
-            <p className="p-s-3">
-              <strong>Borderscapes</strong>
-              <br />
-              WebGIS of Egyptian State Formation and the Changing Socio-Spatial Landscape of the Nile First Cataract Region in the 4th and 3rd millennia BCE
-            </p>
-          </div>
+          <p className="p-s-3">
+            <strong>Borderscapes</strong>
+            <br />
+            WebGIS of Egyptian State Formation and the Changing Socio-Spatial
+            Landscape of the Nile First Cataract Region in the 4th and 3rd
+            millennia BCE
+          </p>
+        </div>
       </Container>
     </Footer>
   )
