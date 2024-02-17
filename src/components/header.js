@@ -7,8 +7,8 @@ import { Container, Row, Col } from "react-bootstrap"
 const HeaderSection = ({ siteTitle }) => (
   <Header>
     <Container>
-      <Row className="text-center">
-        <Col xs={12} md={3}>
+      <div className="d-md-flex justify-content-around align-items-center text-center">
+        <div>
           <Link to={withPrefix("/")}>
             <StaticImage
               src="../images/borderscape.svg"
@@ -19,15 +19,13 @@ const HeaderSection = ({ siteTitle }) => (
               className="img-fluid"
             />
           </Link>
-        </Col>
-        <Col>
-          <div className="lead pt-5">
-            WebGIS of Egyptian State Formation and the Changing Socio-Spatial
-            Landscape of the Nile First Cataract Region in the 4th and 3rd
-            millennia BCE
-          </div>
-        </Col>
-      </Row>
+        </div>
+        <div className="lead ms-4">
+          WebGIS of Egyptian State Formation and the Changing Socio-Spatial
+          Landscape of the Nile First Cataract Region in the 4th and 3rd
+          millennia BCE
+        </div>
+      </div>
     </Container>
   </Header>
 )
