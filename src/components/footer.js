@@ -10,22 +10,6 @@ const FooterSection = () => {
         <div className="d-flex flex-row justify-content-around align-items-center flex-wrap">
           <div>
             <a
-              href="https://www.borderscapeproject.org/"
-              target="_blank"
-              rel="noreferrer nooper"
-              title="Borderscape project"
-            >
-              <StaticImage
-                src="../images/borderscape.svg"
-                formats={["AUTO", "WEBP"]}
-                alt="Borderscapes Borderscape project"
-                width={200}
-                className="img-fluid"
-              />
-            </a>
-          </div>
-          <div>
-            <a
               href="https://eeagrants.org/"
               target="_blank"
               rel="noreferrer nooper"
@@ -155,7 +139,7 @@ const FooterSection = () => {
 
         <div className="text-center mt-3 pt-3 border-top">
           <p className="p-s-3">
-            <strong>Borderscapes</strong>
+            <strong>BORDERSCAPE</strong>
             <br />
             WebGIS of Egyptian State Formation and the Changing Socio-Spatial
             Landscape of the Nile First Cataract Region in the 4th and 3rd
@@ -170,7 +154,7 @@ const FooterSection = () => {
 //style
 const Footer = styled.footer`
   background-color: #ececec;
-  border-top: #000 solid 0.5rem;
+  border-top: #ee8822 solid 0.5rem;
   min-height: auto;
   margin-top: 3rem;
   padding-top: 1rem;

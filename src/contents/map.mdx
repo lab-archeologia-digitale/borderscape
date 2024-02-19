@@ -1,5 +1,5 @@
 ---
-title: "The Web-based map"
+title: "The Web-based map v.1"
 date: "2024-02-13"
 slug: "map"
 description: "An easy to use component for building powerful and fully customizable maps"
@@ -51,7 +51,6 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
 
 <MapComp
   height="600px"
-  path2geojson="../data/toponimi.geojson"
   name="Siti"
   center= "24.173,32.911,9"
   baseLayers="EsriSatellite, EsriTopo, OSM">
@@ -59,6 +58,7 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
   <VectorLayer 
     name="Siti"
     path2geojson="../data/sites.geojson"
+    checked={true}
     popupTemplate={
       (attribs) => { return `<p><strong>${attribs.id}. ${attribs.name} (${attribs.locality})</strong>
       <br />— ${attribs.type}
@@ -110,20 +110,12 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
       <br />— ${attribs.type}
       <hr />${attribs.bibliography}` }
     }
+    checked={true}
     pointToLayer={
       (f, ll) => {
-        const mapType = {
-          'Campsite': '#00a5e3',
-          'Cemetery': '#8dd7bf',
-          'Inscription': '#ff90c5',
-          'Isolated Building/Feature': '#ff5768',
-          'Isolated/Scatter of Finds': '#ffbf65',
-          'Rock Art': '#c05780',
-          'Settlement': '#cff800'
-        }
         return L.circleMarker(ll, {
           radius: 4,
-          fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+          fillColor: '#00ffff',
           color: "#000",
           weight: 1,
           opacity: 1,
@@ -151,20 +143,12 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
       <br />— ${attribs.type}
       <hr />${attribs.bibliography}` }
     }
+    checked={true}
     pointToLayer={
       (f, ll) => {
-        const mapType = {
-          'Campsite': '#00a5e3',
-          'Cemetery': '#8dd7bf',
-          'Inscription': '#ff90c5',
-          'Isolated Building/Feature': '#ff5768',
-          'Isolated/Scatter of Finds': '#ffbf65',
-          'Rock Art': '#c05780',
-          'Settlement': '#cff800'
-        }
         return L.circleMarker(ll, {
           radius: 4,
-          fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+          fillColor: '#00ffff',
           color: "#000",
           weight: 1,
           opacity: 1,
@@ -192,20 +176,12 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
       <br />— ${attribs.type}
       <hr />${attribs.bibliography}` }
     }
+    checked={true}
     pointToLayer={
       (f, ll) => {
-        const mapType = {
-          'Campsite': '#00a5e3',
-          'Cemetery': '#8dd7bf',
-          'Inscription': '#ff90c5',
-          'Isolated Building/Feature': '#ff5768',
-          'Isolated/Scatter of Finds': '#ffbf65',
-          'Rock Art': '#c05780',
-          'Settlement': '#cff800'
-        }
         return L.circleMarker(ll, {
           radius: 4,
-          fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+          fillColor: '#00ffff',
           color: "#000",
           weight: 1,
           opacity: 1,
@@ -235,20 +211,12 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
       <br />— ${attribs.type}
       <hr />${attribs.bibliography}` }
     }
+    checked={true}
     pointToLayer={
       (f, ll) => {
-        const mapType = {
-          'Campsite': '#00a5e3',
-          'Cemetery': '#8dd7bf',
-          'Inscription': '#ff90c5',
-          'Isolated Building/Feature': '#ff5768',
-          'Isolated/Scatter of Finds': '#ffbf65',
-          'Rock Art': '#c05780',
-          'Settlement': '#cff800'
-        }
         return L.circleMarker(ll, {
           radius: 4,
-          fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+          fillColor: '#00ffff',
           color: "#000",
           weight: 1,
           opacity: 1,
@@ -276,20 +244,12 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
       <br />— ${attribs.type}
       <hr />${attribs.bibliography}` }
     }
+    checked={true}
     pointToLayer={
       (f, ll) => {
-        const mapType = {
-          'Campsite': '#00a5e3',
-          'Cemetery': '#8dd7bf',
-          'Inscription': '#ff90c5',
-          'Isolated Building/Feature': '#ff5768',
-          'Isolated/Scatter of Finds': '#ffbf65',
-          'Rock Art': '#c05780',
-          'Settlement': '#cff800'
-        }
         return L.circleMarker(ll, {
           radius: 4,
-          fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+          fillColor: '#00ffff',
           color: "#000",
           weight: 1,
           opacity: 1,
@@ -317,20 +277,12 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
       <br />— ${attribs.type}
       <hr />${attribs.bibliography}` }
     }
+    checked={true}
     pointToLayer={
       (f, ll) => {
-        const mapType = {
-          'Campsite': '#00a5e3',
-          'Cemetery': '#8dd7bf',
-          'Inscription': '#ff90c5',
-          'Isolated Building/Feature': '#ff5768',
-          'Isolated/Scatter of Finds': '#ffbf65',
-          'Rock Art': '#c05780',
-          'Settlement': '#cff800'
-        }
         return L.circleMarker(ll, {
           radius: 4,
-          fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+          fillColor: '#00ffff',
           color: "#000",
           weight: 1,
           opacity: 1,

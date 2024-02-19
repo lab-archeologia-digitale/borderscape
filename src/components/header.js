@@ -21,8 +21,7 @@ const HeaderSection = ({ siteTitle }) => (
           </Link>
         </div>
         <div className="lead ms-4">
-          WebGIS of Egyptian State Formation and the Changing Socio-Spatial
-          Landscape of the Nile First Cataract Region in the 4th and 3rd
+          <strong>WebGIS</strong> State Formation and Settlement Patterns in the Ancient Egyptian Southern Border
           millennia BCE
         </div>
       </div>
