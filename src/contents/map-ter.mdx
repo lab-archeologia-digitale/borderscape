@@ -1,0 +1,148 @@
+---
+title: "The Web-based map #3"
+date: "2024-02-13"
+slug: "map-ter"
+description: "An easy to use component for building powerful and fully customizable maps"
+menu_position: 2
+---
+
+
+# The WebGIS
+
+import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
+import { Marker, Popup } from "react-leaflet"
+
+## Sites by (macro-) typology
+
+---
+
+
+
+
+<MapComp
+  height="600px"
+  center= "24.173,32.911,9"
+  baseLayers="EsriSatellite, EsriTopo, OSM">
+
+  {/* <RasterLayer 
+    name="Corona"
+    url="https://swift.cloud.garr.it/swift/v1/corona_sudan/{z}/{x}/{y}.png"
+    checked={true}
+    asOverlay={true} />
+  
+  <VectorLayer 
+    name="Flooding Nile: 86"
+    path2geojson="../data/flooding-nile.geojson"
+    popupTemplate={
+      (attribs) => { return `<p><strong>${attribs.name}</strong>
+      Level: ${attribs.level}` }
+    }
+    filter={ f => f.properties.level === 86 }
+    />
+  
+  <VectorLayer 
+    name="Flooding Nile: 94.5"
+    path2geojson="../data/flooding-nile.geojson"
+    popupTemplate={
+      (attribs) => { return `<p><strong>${attribs.name}</strong>
+      Level: ${attribs.level}` }
+    }
+    filter={ f => f.properties.level === 94.5 }
+    checked={false}
+    /> */}
+  
+  <VectorLayer 
+    name="Settlements"
+    path2geojson="../data/sites-end.geojson"
+    checked={true}
+    popupTemplate={
+      (attribs) => { return `<p><strong>${attribs.id}. ${attribs.name} (${attribs.locality})</strong>
+      <br />— ${attribs.type}
+      <hr />${attribs.bibliography}` }
+    }
+    filter={ f => f.properties.macrotype === 'Settlement'}
+    pointToLayer={
+      (f, ll) => {
+        let myIcon = L.icon({
+            iconUrl: '../data/settlement.svg',
+            iconSize:     [10, 10],
+            iconAnchor:   [5, 5],
+            popupAnchor:  [0, 0]
+          });
+
+        if (f.properties.macrotype === 'Settlement' && f.properties.type === 'Campsite'){
+          myIcon = L.icon({
+            iconUrl: '../data/settlement.svg',
+            iconSize:     [15, 15],
+            iconAnchor:   [7, 7],
+            popupAnchor:  [0, 0]
+          });
+        } else if (f.properties.macrotype === 'Settlement' && f.properties.type === 'Medium-size Long-term Campsite'){
+          myIcon = L.icon({
+            iconUrl: '../data/settlement.svg',
+            iconSize:     [20, 20],
+            iconAnchor:   [10, 10],
+            popupAnchor:  [0, 0]
+          });
+        } else if (f.properties.macrotype === 'Settlement' && f.properties.type === 'Concentration of Campsites'){
+          myIcon = L.icon({
+            iconUrl: '../data/settlement.svg',
+            iconSize:     [25, 25],
+            iconAnchor:   [12, 12],
+            popupAnchor:  [0, 0]
+          });
+        } else if (f.properties.macrotype === 'Settlement' && f.properties.type === 'Domestic Quarter'){
+          myIcon = L.icon({
+            iconUrl: '../data/settlement.svg',
+            iconSize:     [30, 30],
+            iconAnchor:   [15, 15],
+            popupAnchor:  [0, 0]
+          });
+        } else if (f.properties.macrotype === 'Settlement' && f.properties.type === 'Domestic Quarter, production area'){
+          myIcon = L.icon({
+            iconUrl: '../data/settlement.svg',
+            iconSize:     [35, 35],
+            iconAnchor:   [17, 17],
+            popupAnchor:  [0, 0]
+          });
+        } else if (f.properties.macrotype === 'Settlement' && f.properties.type === 'Village'){
+          myIcon = L.icon({
+            iconUrl: '../data/settlement.svg',
+            iconSize:     [40, 40],
+            iconAnchor:   [20, 20],
+            popupAnchor:  [0, 0]
+          });
+        } else if (f.properties.macrotype === 'Settlement' && f.properties.type === 'Storage Area'){
+          myIcon = L.icon({
+            iconUrl: '../data/settlement.svg',
+            iconSize:     [45, 45],
+            iconAnchor:   [22, 22],
+            popupAnchor:  [0, 0]
+          });
+        } else if (f.properties.macrotype === 'Settlement' && f.properties.type === 'Proto Urban Center'){
+          myIcon = L.icon({
+            iconUrl: '../data/settlement.svg',
+            iconSize:     [50, 50],
+            iconAnchor:   [25, 25],
+            popupAnchor:  [0, 0]
+          });
+        } else if (f.properties.macrotype === 'Settlement' && f.properties.type === 'Urban Center'){
+          myIcon = L.icon({
+            iconUrl: '../data/settlement.svg',
+            iconSize:     [55, 55],
+            iconAnchor:   [27, 27],
+            popupAnchor:  [0, 0]
+          });
+        }
+        
+        return L.marker(ll, { icon: myIcon })
+      
+      }}
+  />
+
+  
+
+  
+</MapComp>
+
+---

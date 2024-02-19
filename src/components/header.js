@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link, withPrefix } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
-import { Container, Row, Col } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 
 const HeaderSection = ({ siteTitle }) => (
   <Header>
