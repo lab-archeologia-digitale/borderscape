@@ -57,7 +57,7 @@ import { Marker, Popup } from "react-leaflet"
     checked={true}
     popupTemplate={
       (attribs) => { return `<p><strong>${attribs.id}. ${attribs.name} (${attribs.locality})</strong>
-      <br />— ${attribs.type}
+      <br />— ${attribs.macrotype}: ${attribs.type}
       <hr />${attribs.bibliography}` }
     }
     filter={ f => f.properties.macrotype === 'Settlement'}
