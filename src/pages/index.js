@@ -1,11 +1,14 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import { Container } from "react-bootstrap"
+import Slide from "../components/slide"
 
 const IndexPage = () => (
   <Layout>
     <Container>
       <h1>About the BORDERSCAPE Project WebGIS</h1>
+
+      <Slide />      
 
       <p>
         The BORDERSCAPE WebGIS databases and web app are outcomes of the{" "}

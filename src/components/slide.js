@@ -8,11 +8,12 @@ function Slide() {
     <Slider>
       <Carousel>
         <Carousel.Item>
-          <StaticImage
-            src="../images/slide_1.jpg"
+        <StaticImage
+            src="../images/desert/desert-1.jpg"
             className="d-block w-100"
+            height={200}
             formats={["AUTO", "WEBP"]}
-            alt="slide1"
+            alt="slide2"
           />
           {/*  <Carousel.Caption>
             <h3>LORE IPSUM DOLOR SIT AMET</h3>
@@ -25,7 +26,7 @@ function Slide() {
         </Carousel.Item>
         <Carousel.Item>
           <StaticImage
-            src="../images/slide_2.jpg"
+            src="../images/desert/desert-2.jpg"
             className="d-block w-100"
             formats={["AUTO", "WEBP"]}
             alt="slide2"
@@ -41,7 +42,23 @@ function Slide() {
         </Carousel.Item>
         <Carousel.Item>
           <StaticImage
-            src="../images/slide_3.jpg"
+            src="../images/desert/desert-3.jpg"
+            className="d-block w-100"
+            formats={["AUTO", "WEBP"]}
+            alt="slide3"
+          />
+          {/* <Carousel.Caption>
+            <h3>LORE IPSUM DOLOR SIT AMET</h3>
+            <span className="subTitle">
+              Nulla vitae elit libero, a pharetra augue mollis interdum.
+            </span>
+            <br></br>
+            <button className="btn btn-primary m-4">LINK</button>
+          </Carousel.Caption> */}
+        </Carousel.Item>
+        <Carousel.Item>
+          <StaticImage
+            src="../images/desert/desert-4.jpg"
             className="d-block w-100"
             formats={["AUTO", "WEBP"]}
             alt="slide3"
