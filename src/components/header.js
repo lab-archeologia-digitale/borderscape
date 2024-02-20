@@ -30,7 +30,7 @@ const HeaderSection = ({ siteTitle }) => (
 )
 
 const Header = styled.header`
-  background-color: #ee8822;
+  background-color: var(--project-color);
   color: #ffffff;
   margin-bottom: 5rem;
 `

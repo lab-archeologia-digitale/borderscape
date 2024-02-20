@@ -154,7 +154,7 @@ const FooterSection = () => {
 //style
 const Footer = styled.footer`
   background-color: #ececec;
-  border-top: #ee8822 solid 0.5rem;
+  border-top: var(--project-color) solid 0.5rem;
   min-height: auto;
   margin-top: 3rem;
   padding-top: 1rem;

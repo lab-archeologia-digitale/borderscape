@@ -63,7 +63,7 @@ function Slide() {
 //style
 const Slider = styled.div`
   margin-bottom: 3rem; 
-  border-bottom: #3e281c solid .5rem;
+  border-bottom: var(--project-color) solid .3rem;
   
   .subTitle {
   }
