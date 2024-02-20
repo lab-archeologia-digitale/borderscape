@@ -138,6 +138,7 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
       
       }}
   />
+
   <VectorLayer 
     name="Pyramids"
     path2geojson="../data/sites.geojson"
@@ -268,6 +269,67 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
           });
         }
         return L.marker(ll, { icon: myIcon })
+      }}
+  />
+
+  <VectorLayer 
+    name="Rock Art"
+    path2geojson="../data/sites.geojson"
+    checked={true}
+    popupTemplate={
+      (attribs) => { return `<p><strong>${attribs.name} (${attribs.locality})</strong>
+      <br />— ${attribs.macrotype}: ${attribs.type}
+      <hr />${attribs.bibliography}` }
+    }
+    filter={ f => f.properties.macrotype === 'Rock Art'}
+    pointToLayer={
+      (f, ll) => {
+        let myIcon = L.icon({
+            iconUrl: '../data/rock-art.svg',
+            iconSize:     [10, 10],
+            iconAnchor:   [5, 5],
+            popupAnchor:  [0, 0]
+          });
+
+        if (f.properties.type === 'Isolated Rock Art'){
+          myIcon = L.icon({
+            iconUrl: '../data/rock-art.svg',
+            iconSize:     [15, 15],
+            iconAnchor:   [7, 7],
+            popupAnchor:  [0, 0]
+          });
+        } else if (f.properties.type === 'Cluster of Rock Art'){
+          myIcon = L.icon({
+            iconUrl: '../data/rock-art.svg',
+            iconSize:     [20, 20],
+            iconAnchor:   [10, 10],
+            popupAnchor:  [0, 0]
+          });
+        } else if (f.properties.type === 'Dispersed Concentration of Rock Art'){
+          myIcon = L.icon({
+            iconUrl: '../data/rock-art.svg',
+            iconSize:     [25, 25],
+            iconAnchor:   [12, 12],
+            popupAnchor:  [0, 0]
+          });
+        } else if (f.properties.type === 'Clustered Concentration of Rock Art'){
+          myIcon = L.icon({
+            iconUrl: '../data/rock-art.svg',
+            iconSize:     [30, 30],
+            iconAnchor:   [15, 15],
+            popupAnchor:  [0, 0]
+          });
+        } else if (f.properties.type === 'Dense Concentration of Rock Art'){
+          myIcon = L.icon({
+            iconUrl: '../data/rock-art.svg',
+            iconSize:     [35, 35],
+            iconAnchor:   [17, 17],
+            popupAnchor:  [0, 0]
+          });
+        }
+        
+        return L.marker(ll, { icon: myIcon })
+      
       }}
   />
 
