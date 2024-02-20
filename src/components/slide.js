@@ -11,7 +11,6 @@ function Slide() {
         <StaticImage
             src="../images/desert/desert-1.jpg"
             className="d-block w-100"
-            height={200}
             formats={["AUTO", "WEBP"]}
             alt="slide2"
           />
