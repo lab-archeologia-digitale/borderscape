@@ -33,7 +33,7 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
     name="Flooding Nile: 86"
     path2geojson="../data/flooding-nile.geojson"
     popupTemplate={
-      (attribs) => { return `<p><strong>${attribs.name}</strong>
+      (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name}</strong>
       Level: ${attribs.level}` }
     }
     filter={ f => f.properties.level === 86 }
@@ -43,7 +43,7 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
     name="Flooding Nile: 94.5"
     path2geojson="../data/flooding-nile.geojson"
     popupTemplate={
-      (attribs) => { return `<p><strong>${attribs.name}</strong>
+      (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name}</strong>
       Level: ${attribs.level}` }
     }
     filter={ f => f.properties.level === 94.5 }
@@ -55,7 +55,7 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
     path2geojson="../data/sites.geojson"
     checked={true}
     popupTemplate={
-      (attribs) => { return `<p><strong>${attribs.id}. ${attribs.name} (${attribs.locality})</strong>
+      (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
       <br />— ${attribs.type}
       <hr />${attribs.bibliography}` }
     }
@@ -78,7 +78,7 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
     path2geojson="../data/sites.geojson"
     checked={true}
     popupTemplate={
-      (attribs) => { return `<p><strong>${attribs.id}. ${attribs.name} (${attribs.locality})</strong>
+      (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
       <br />— ${attribs.type}
       <hr />${attribs.bibliography}` }
     }
@@ -101,7 +101,7 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
     path2geojson="../data/sites.geojson"
     checked={true}
     popupTemplate={
-      (attribs) => { return `<p><strong>${attribs.id}. ${attribs.name} (${attribs.locality})</strong>
+      (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
       <br />— ${attribs.type}
       <hr />${attribs.bibliography}` }
     }
@@ -123,7 +123,7 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
     path2geojson="../data/sites.geojson"
     checked={true}
     popupTemplate={
-      (attribs) => { return `<p><strong>${attribs.id}. ${attribs.name} (${attribs.locality})</strong>
+      (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
       <br />— ${attribs.type}
       <hr />${attribs.bibliography}` }
     }
@@ -145,7 +145,7 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
     path2geojson="../data/sites.geojson"
     checked={true}
     popupTemplate={
-      (attribs) => { return `<p><strong>${attribs.id}. ${attribs.name} (${attribs.locality})</strong>
+      (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
       <br />— ${attribs.type}
       <hr />${attribs.bibliography}` }
     }
@@ -167,7 +167,7 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
     path2geojson="../data/sites.geojson"
     checked={true}
     popupTemplate={
-      (attribs) => { return `<p><strong>${attribs.id}. ${attribs.name} (${attribs.locality})</strong>
+      (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
       <br />— ${attribs.type}
       <hr />${attribs.bibliography}` }
     }
@@ -189,7 +189,7 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
     path2geojson="../data/sites.geojson"
     checked={true}
     popupTemplate={
-      (attribs) => { return `<p><strong>${attribs.id}. ${attribs.name} (${attribs.locality})</strong>
+      (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
       <br />— ${attribs.type}
       <hr />${attribs.bibliography}` }
     }
@@ -225,7 +225,7 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
     path2geojson="../data/sites.geojson"
     checked={true}
     popupTemplate={
-      (attribs) => { return `<p><strong>${attribs.id}. ${attribs.name} (${attribs.locality})</strong>
+      (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
       <br />— ${attribs.type}
       <hr />${attribs.bibliography}` }
     }
@@ -248,7 +248,7 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
     path2geojson="../data/sites.geojson"
     checked={true}
     popupTemplate={
-      (attribs) => { return `<p><strong>${attribs.id}. ${attribs.name} (${attribs.locality})</strong>
+      (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
       <br />— ${attribs.type}
       <hr />${attribs.bibliography}` }
     }
@@ -270,7 +270,7 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
     path2geojson="../data/sites.geojson"
     checked={true}
     popupTemplate={
-      (attribs) => { return `<p><strong>${attribs.id}. ${attribs.name} (${attribs.locality})</strong>
+      (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
       <br />— ${attribs.type}
       <hr />${attribs.bibliography}` }
     }
@@ -292,7 +292,7 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
     path2geojson="../data/sites.geojson"
     checked={true}
     popupTemplate={
-      (attribs) => { return `<p><strong>${attribs.id}. ${attribs.name} (${attribs.locality})</strong>
+      (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
       <br />— ${attribs.type}
       <hr />${attribs.bibliography}` }
     }
@@ -314,7 +314,7 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
     path2geojson="../data/sites.geojson"
     checked={true}
     popupTemplate={
-      (attribs) => { return `<p><strong>${attribs.id}. ${attribs.name} (${attribs.locality})</strong>
+      (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
       <br />— ${attribs.type}
       <hr />${attribs.bibliography}` }
     }
@@ -336,7 +336,7 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
     path2geojson="../data/sites.geojson"
     checked={true}
     popupTemplate={
-      (attribs) => { return `<p><strong>${attribs.id}. ${attribs.name} (${attribs.locality})</strong>
+      (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
       <br />— ${attribs.type}
       <hr />${attribs.bibliography}` }
     }
