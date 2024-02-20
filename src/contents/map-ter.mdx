@@ -327,9 +327,88 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
             popupAnchor:  [0, 0]
           });
         }
-        
         return L.marker(ll, { icon: myIcon })
-      
+      }}
+  />
+
+
+  <VectorLayer 
+    name="Cemetery"
+    path2geojson="../data/sites.geojson"
+    checked={true}
+    popupTemplate={
+      (attribs) => { return `<p><strong>${attribs.name} (${attribs.locality})</strong>
+      <br />— ${attribs.macrotype}: ${attribs.type}
+      <hr />${attribs.bibliography}` }
+    }
+    filter={ f => f.properties.macrotype === 'Cemetery'}
+    pointToLayer={
+      (f, ll) => {
+        let myIcon = L.icon({
+            iconUrl: '../data/cemetery.svg',
+            iconSize:     [10, 10],
+            iconAnchor:   [5, 5],
+            popupAnchor:  [0, 0]
+          });
+
+        if (f.properties.type === 'Isolated Tomb'){
+          myIcon = L.icon({
+            iconUrl: '../data/cemetery.svg',
+            iconSize:     [15, 15],
+            iconAnchor:   [7, 7],
+            popupAnchor:  [0, 0]
+          });
+        } else if (f.properties.type === 'Cluster of Tombs'){
+          myIcon = L.icon({
+            iconUrl: '../data/cemetery.svg',
+            iconSize:     [20, 20],
+            iconAnchor:   [10, 10],
+            popupAnchor:  [0, 0]
+          });
+        } else if (f.properties.type === 'Small-size Cemetery'){
+          myIcon = L.icon({
+            iconUrl: '../data/cemetery.svg',
+            iconSize:     [25, 25],
+            iconAnchor:   [12, 12],
+            popupAnchor:  [0, 0]
+          });
+        } else if (f.properties.type === 'Medium-size Cemetery'){
+          myIcon = L.icon({
+            iconUrl: '../data/cemetery.svg',
+            iconSize:     [30, 30],
+            iconAnchor:   [15, 15],
+            popupAnchor:  [0, 0]
+          });
+        } else if (f.properties.type === 'Large-size Cemetery'){
+          myIcon = L.icon({
+            iconUrl: '../data/cemetery.svg',
+            iconSize:     [35, 35],
+            iconAnchor:   [17, 17],
+            popupAnchor:  [0, 0]
+          });
+        } else if (f.properties.type === 'Extensive Cemetery'){
+          myIcon = L.icon({
+            iconUrl: '../data/cemetery.svg',
+            iconSize:     [40, 40],
+            iconAnchor:   [20, 20],
+            popupAnchor:  [0, 0]
+          });
+        } else if (f.properties.type === 'Monumental Cemetery'){
+          myIcon = L.icon({
+            iconUrl: '../data/cemetery.svg',
+            iconSize:     [45, 45],
+            iconAnchor:   [22, 22],
+            popupAnchor:  [0, 0]
+          });
+        } else if (f.properties.type === 'Funerary Monument'){
+          myIcon = L.icon({
+            iconUrl: '../data/cemetery.svg',
+            iconSize:     [50, 50],
+            iconAnchor:   [25, 25],
+            popupAnchor:  [0, 0]
+          });
+        }
+        return L.marker(ll, { icon: myIcon })
       }}
   />
 
