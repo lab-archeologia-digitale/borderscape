@@ -8,21 +8,33 @@ const HeaderSection = ({ siteTitle }) => (
   <Header>
     <Container>
       <div className="d-md-flex justify-content-around align-items-center text-center">
-        <div>
-          <Link to={withPrefix("/")}>
-            <StaticImage
-              src="../images/borderscape.svg"
-              width={250}
-              quality={80}
-              formats={["AUTO", "WEBP"]}
-              alt={siteTitle}
-              className="img-fluid"
-            />
-          </Link>
-        </div>
+        <Link to={withPrefix("/")}>
+          <div className="row">
+            <div className="col-3">
+              <StaticImage
+                src="../images/norway-grants.svg"
+                width={50}
+                quality={80}
+                formats={["AUTO", "WEBP"]}
+                alt={siteTitle}
+                className="img-fluid mt-3"
+              />
+            </div>
+            <div className="col-9">
+              <StaticImage
+                src="../images/borderscape.svg"
+                width={250}
+                quality={80}
+                formats={["AUTO", "WEBP"]}
+                alt={siteTitle}
+                className="img-fluid"
+              />
+            </div>
+          </div>
+        </Link>
         <div className="lead ms-4">
-          <strong>WebGIS</strong> State Formation and Settlement Patterns in the Ancient Egyptian Southern Border
-          millennia BCE
+          <strong>WebGIS</strong> State Formation and Settlement Patterns in the
+          Ancient Egyptian Southern Border, 4th-3rd millennia BCE
         </div>
       </div>
     </Container>
