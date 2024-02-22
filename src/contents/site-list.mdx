@@ -8,15 +8,15 @@ menu_position: 4
 
 import DataTb from "../modules/datatb.js"
 
-# Detailed ist of sites
+# Detailed list of sites
 
 
 <DataTb
   path2csv="../data/sites.csv"
   dColumns={[
     {
-      name: "ID",
-      selector: row => row.id,
+      name: "Codex",
+      selector: row => row.codex,
       sortable: true,
     },
     {
@@ -25,7 +25,17 @@ import DataTb from "../modules/datatb.js"
       sortable: true,
     },
     {
-      name: "Typology",
+      name: "Locality",
+      selector: row => row.locality,
+      sortable: true,
+    },
+    {
+      name: "Macrotype",
+      selector: row => row.macrotype,
+      sortable: true,
+    },
+    {
+      name: "Site type",
       selector: row => row.type,
       sortable: true,
     },
@@ -60,18 +70,8 @@ import DataTb from "../modules/datatb.js"
       sortable: true,
     },
     {
-      name: "Culture",
-      selector: row => row.culture,
-      sortable: true,
-    },
-    {
-      name: "Size",
-      selector: row => row.size,
-      sortable: true,
-    },
-    {
-      name: "Codex",
-      selector: row => row.codex,
+      name: "C14",
+      selector: row => row.c14,
       sortable: true,
     },
     {
@@ -89,20 +89,6 @@ import DataTb from "../modules/datatb.js"
       selector: row => row.project,
       sortable: true,
     },
-    {
-      name: "Locality",
-      selector: row => row.locality,
-      sortable: true,
-    },
-    {
-      name: "Macrotype",
-      selector: row => row.macrotype,
-      sortable: true,
-    },
-    {
-      name: "C14",
-      selector: row => row.c14,
-      sortable: true,
-    },
+    
   ]}
 />
