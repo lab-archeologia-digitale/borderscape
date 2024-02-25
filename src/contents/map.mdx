@@ -1,8 +1,8 @@
 ---
-title: "The Web-based map v.1"
-date: "2024-02-13"
-slug: "map"
-description: "An easy to use component for building powerful and fully customizable maps"
+title: "WebGIS"
+date: "2024-02-25"
+slug: "webGIS"
+description: "The BORDERSCAPE WebGIS databases and web app are outcomes of the BORDERSCAPE Project - Egyptian State Formation and the Changing Socio-Spatial Landscape of the Nile First Cataract Region in the 4th and 3rd millennia BCE."
 menu_position: 1
 ---
 
@@ -10,16 +10,16 @@ menu_position: 1
 # The WebGIS
 
 import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
+import { LayersControl, ScaleControl } from "react-leaflet"
+import { Row, Col } from "react-bootstrap"
 
 ## Sites by (macro-) typology
 
 ---
 
-<div className="" style={{ fontSize: '.9em'}}>
 **Legend**
 
 <div className="d-flex flex flex-wrap">
-
   {
     [
       ['Campsite', '#00a5e3'],
@@ -46,24 +46,370 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
   }
 </div>
 ---
-</div>
 
 
 <MapComp
   height="600px"
-  name="Siti"
+  baseLayers="EsriSatellite, EsriTopo, OSM">
+
+  <ScaleControl />
+
+  <LayersControl collapsed={ false }>
+    <RasterLayer 
+      name="Corona"
+      url="https://swift.cloud.garr.it/swift/v1/corona_sudan/{z}/{x}/{y}.png"
+      checked={true}
+      asOverlay={true} />
+  </LayersControl>
+  
+  <LayersControl collapsed={ false }>
+    <VectorLayer 
+      name="Flooding Nile: 86"
+      path2geojson="../data/flooding-nile.geojson"
+      popupTemplate={
+        (attribs) => { return `<p><strong>${attribs.name}</strong>
+        Level: ${attribs.level}` }
+      }
+      filter={ f => f.properties.level === 86 }
+      />
+    
+    <VectorLayer 
+      name="Flooding Nile: 94.5"
+      path2geojson="../data/flooding-nile.geojson"
+      popupTemplate={
+        (attribs) => { return `<p><strong>${attribs.name}</strong>
+        Level: ${attribs.level}` }
+      }
+      filter={ f => f.properties.level === 94.5 }
+      checked={false}
+      />
+  </LayersControl>
+  
+  <LayersControl collapsed={false}>
+    
+    <VectorLayer 
+      name="Phase 1 (3800-3500 BCE)"
+      path2geojson="../data/sites.geojson"
+      checked={true}
+      fitToContent={ true }
+      popupTemplate={
+        (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
+        <br />— ${attribs.macrotype} > ${attribs.type}
+        <hr />${attribs.bibliography}` }
+      }
+      pointToLayer={
+        (f, ll) => {
+
+          const mapType = {
+            'Campsite': '#00a5e3',
+            'Cemetery': '#8dd7bf',
+            'Inscription': '#ff90c5',
+            'Isolated Building/Feature': '#ff5768',
+            'Isolated/Scatter of Finds': '#ffbf65',
+            'Rock Art': '#c05780',
+            'Settlement': '#cff800'
+          }
+          return L.circleMarker(ll, {
+            radius: 4,
+            fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+            color: "#000",
+            weight: 1,
+            opacity: 1,
+            fillOpacity: 0.8
+          });
+        }
+      }
+        filter={f => (f.properties.ph1 === 'X') }
+    />
+
+    <VectorLayer 
+      name="Phase 2 (3500-3300 BCE)"
+      path2geojson="../data/sites.geojson"
+      checked={true}
+      fitToContent={ true }
+      popupTemplate={
+        (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
+        <br />— ${attribs.macrotype} > ${attribs.type}
+        <hr />${attribs.bibliography}` }
+      }
+      pointToLayer={
+        (f, ll) => {
+
+          const mapType = {
+            'Campsite': '#00a5e3',
+            'Cemetery': '#8dd7bf',
+            'Inscription': '#ff90c5',
+            'Isolated Building/Feature': '#ff5768',
+            'Isolated/Scatter of Finds': '#ffbf65',
+            'Rock Art': '#c05780',
+            'Settlement': '#cff800'
+          }
+          return L.circleMarker(ll, {
+            radius: 4,
+            fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+            color: "#000",
+            weight: 1,
+            opacity: 1,
+            fillOpacity: 0.8
+          });
+        }
+      }
+      filter={f => (f.properties.ph2 === 'X') }
+    />
+
+    <VectorLayer 
+      name="Phase 3 (3300-3100 BCE)"
+      path2geojson="../data/sites.geojson"
+      checked={true}
+      fitToContent={ true }
+      popupTemplate={
+        (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
+        <br />— ${attribs.macrotype} > ${attribs.type}
+        <hr />${attribs.bibliography}` }
+      }
+      pointToLayer={
+        (f, ll) => {
+
+          const mapType = {
+            'Campsite': '#00a5e3',
+            'Cemetery': '#8dd7bf',
+            'Inscription': '#ff90c5',
+            'Isolated Building/Feature': '#ff5768',
+            'Isolated/Scatter of Finds': '#ffbf65',
+            'Rock Art': '#c05780',
+            'Settlement': '#cff800'
+          }
+          return L.circleMarker(ll, {
+            radius: 4,
+            fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+            color: "#000",
+            weight: 1,
+            opacity: 1,
+            fillOpacity: 0.8
+          });
+        }
+      }
+      filter={f => (f.properties.ph3 === 'X') }
+    />
+    
+    <VectorLayer 
+      name="Phase 4 (3100-2650 BCE)"
+      path2geojson="../data/sites.geojson"
+      checked={true}
+      fitToContent={ true }
+      popupTemplate={
+        (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
+        <br />— ${attribs.macrotype} > ${attribs.type}
+        <hr />${attribs.bibliography}` }
+      }
+      pointToLayer={
+        (f, ll) => {
+
+          const mapType = {
+            'Campsite': '#00a5e3',
+            'Cemetery': '#8dd7bf',
+            'Inscription': '#ff90c5',
+            'Isolated Building/Feature': '#ff5768',
+            'Isolated/Scatter of Finds': '#ffbf65',
+            'Rock Art': '#c05780',
+            'Settlement': '#cff800'
+          }
+          return L.circleMarker(ll, {
+            radius: 4,
+            fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+            color: "#000",
+            weight: 1,
+            opacity: 1,
+            fillOpacity: 0.8
+          });
+        }
+      }
+      filter={f => (f.properties.ph4 === 'X') }
+    />
+    
+    <VectorLayer 
+      name="Phase 5 (2650-2500 BCE)"
+      path2geojson="../data/sites.geojson"
+      checked={true}
+      fitToContent={ true }
+      popupTemplate={
+        (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
+        <br />— ${attribs.macrotype} > ${attribs.type}
+        <hr />${attribs.bibliography}` }
+      }
+      pointToLayer={
+        (f, ll) => {
+
+          const mapType = {
+            'Campsite': '#00a5e3',
+            'Cemetery': '#8dd7bf',
+            'Inscription': '#ff90c5',
+            'Isolated Building/Feature': '#ff5768',
+            'Isolated/Scatter of Finds': '#ffbf65',
+            'Rock Art': '#c05780',
+            'Settlement': '#cff800'
+          }
+          return L.circleMarker(ll, {
+            radius: 4,
+            fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+            color: "#000",
+            weight: 1,
+            opacity: 1,
+            fillOpacity: 0.8
+          });
+        }
+      }
+      filter={f => (f.properties.ph5 === 'X') }
+    />
+
+    <VectorLayer 
+      name="Phase 6 (2500-2300 BCE)"
+      path2geojson="../data/sites.geojson"
+      checked={true}
+      fitToContent={ true }
+      popupTemplate={
+        (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
+        <br />— ${attribs.macrotype} > ${attribs.type}
+        <hr />${attribs.bibliography}` }
+      }
+      pointToLayer={
+        (f, ll) => {
+
+          const mapType = {
+            'Campsite': '#00a5e3',
+            'Cemetery': '#8dd7bf',
+            'Inscription': '#ff90c5',
+            'Isolated Building/Feature': '#ff5768',
+            'Isolated/Scatter of Finds': '#ffbf65',
+            'Rock Art': '#c05780',
+            'Settlement': '#cff800'
+          }
+          return L.circleMarker(ll, {
+            radius: 4,
+            fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+            color: "#000",
+            weight: 1,
+            opacity: 1,
+            fillOpacity: 0.8
+          });
+        }
+      }
+      filter={f => (f.properties.ph6 === 'X') }
+    />
+
+
+  </LayersControl>
+
+  
+</MapComp>
+
+---
+
+
+## Sites by phase
+
+<Row>
+  <Col md={4}>
+    ### Phase 1
+    <MapComp
+      height="400px"
+      center= "24.173,32.911,9"
+      baseLayers="EsriSatellite, EsriTopo, OSM">
+  
+      <VectorLayer 
+        name="Sites"
+        path2geojson="../data/sites.geojson"
+        popupTemplate={
+          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
+          <br />— ${attribs.type}
+          <hr />${attribs.bibliography}` }
+        }
+        checked={true}
+        pointToLayer={
+          (f, ll) => {
+
+            const mapType = {
+              'Campsite': '#00a5e3',
+              'Cemetery': '#8dd7bf',
+              'Inscription': '#ff90c5',
+              'Isolated Building/Feature': '#ff5768',
+              'Isolated/Scatter of Finds': '#ffbf65',
+              'Rock Art': '#c05780',
+              'Settlement': '#cff800'
+            }
+            return L.circleMarker(ll, {
+              radius: 4,
+              fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+              color: "#000",
+              weight: 1,
+              opacity: 1,
+              fillOpacity: 0.8
+            });
+          }
+        }
+        filter={f => (f.properties.ph1 === 'X') }
+      />
+</MapComp>
+  </Col>
+  <Col md={4}>
+    ### Phase 2
+    <MapComp
+  height="400px"
   center= "24.173,32.911,9"
   baseLayers="EsriSatellite, EsriTopo, OSM">
   
   <VectorLayer 
-    name="Siti"
+    name="Sites"
     path2geojson="../data/sites.geojson"
-    checked={true}
     popupTemplate={
       (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
       <br />— ${attribs.type}
       <hr />${attribs.bibliography}` }
     }
+    checked={true}
+    pointToLayer={
+          (f, ll) => {
+
+            const mapType = {
+              'Campsite': '#00a5e3',
+              'Cemetery': '#8dd7bf',
+              'Inscription': '#ff90c5',
+              'Isolated Building/Feature': '#ff5768',
+              'Isolated/Scatter of Finds': '#ffbf65',
+              'Rock Art': '#c05780',
+              'Settlement': '#cff800'
+            }
+            return L.circleMarker(ll, {
+              radius: 4,
+              fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+              color: "#000",
+              weight: 1,
+              opacity: 1,
+              fillOpacity: 0.8
+            });
+          }
+        }
+      filter={f => (f.properties.ph2 === 'X') }
+  />
+</MapComp>
+  </Col>
+  <Col md={4}>
+
+    ### Phase 3
+    <MapComp
+  height="400px"
+  center= "24.173,32.911,9"
+  baseLayers="EsriSatellite, EsriTopo, OSM">
+  
+  <VectorLayer 
+    name="Sites"
+    path2geojson="../data/sites.geojson"
+    popupTemplate={
+      (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
+      <br />— ${attribs.type}
+      <hr />${attribs.bibliography}` }
+    }
+    checked={true}
     pointToLayer={
       (f, ll) => {
 
@@ -86,126 +432,22 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
         });
       }
     }
+    filter={f => (f.properties.ph3 === 'X') }
   />
 </MapComp>
+  </Col>
+</Row>
 
----
-
-## Sites by phase
-
-<div className="row">
-  <div className="col-md-4">
-    ### Phase 1
-    <MapComp
-  height="400px"
-  path2geojson="../data/toponimi.geojson"
-  name="Siti"
-  center= "24.173,32.911,9"
-  baseLayers="EsriSatellite, EsriTopo, OSM">
-  
-  <VectorLayer 
-    name="Siti"
-    path2geojson="../data/sites.geojson"
-    popupTemplate={
-      (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-      <br />— ${attribs.type}
-      <hr />${attribs.bibliography}` }
-    }
-    checked={true}
-    pointToLayer={
-      (f, ll) => {
-        return L.circleMarker(ll, {
-          radius: 4,
-          fillColor: '#00ffff',
-          color: "#000",
-          weight: 1,
-          opacity: 1,
-          fillOpacity: 0.8
-        });
-      }}
-      filter={f => (f.properties.ph1 === 'X') }
-  />
-</MapComp>
-  </div>
-  <div className="col-md-4">
-    ### Phase 2
-    <MapComp
-  height="400px"
-  path2geojson="../data/toponimi.geojson"
-  name="Siti"
-  center= "24.173,32.911,9"
-  baseLayers="EsriSatellite, EsriTopo, OSM">
-  
-  <VectorLayer 
-    name="Siti"
-    path2geojson="../data/sites.geojson"
-    popupTemplate={
-      (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-      <br />— ${attribs.type}
-      <hr />${attribs.bibliography}` }
-    }
-    checked={true}
-    pointToLayer={
-      (f, ll) => {
-        return L.circleMarker(ll, {
-          radius: 4,
-          fillColor: '#00ffff',
-          color: "#000",
-          weight: 1,
-          opacity: 1,
-          fillOpacity: 0.8
-        });
-      }}
-      filter={f => (f.properties.ph2 === 'X') }
-  />
-</MapComp>
-  </div>
-  <div className="col-md-4">
-    ### Phase 3
-    <MapComp
-  height="400px"
-  path2geojson="../data/toponimi.geojson"
-  name="Siti"
-  center= "24.173,32.911,9"
-  baseLayers="EsriSatellite, EsriTopo, OSM">
-  
-  <VectorLayer 
-    name="Siti"
-    path2geojson="../data/sites.geojson"
-    popupTemplate={
-      (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-      <br />— ${attribs.type}
-      <hr />${attribs.bibliography}` }
-    }
-    checked={true}
-    pointToLayer={
-      (f, ll) => {
-        return L.circleMarker(ll, {
-          radius: 4,
-          fillColor: '#00ffff',
-          color: "#000",
-          weight: 1,
-          opacity: 1,
-          fillOpacity: 0.8
-        });
-      }}
-      filter={f => (f.properties.ph3 === 'X') }
-  />
-</MapComp>
-  </div>
-</div>
-<div className="row mt-5">
-  <div className="col-md-4">
+<Row className="mt-5">
+    <Col md={4}>
     ### Phase 4
     <MapComp
   height="400px"
-  path2geojson="../data/toponimi.geojson"
-  name="Siti"
   center= "24.173,32.911,9"
   baseLayers="EsriSatellite, EsriTopo, OSM">
   
   <VectorLayer 
-    name="Siti"
+    name="Sites"
     path2geojson="../data/sites.geojson"
     popupTemplate={
       (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
@@ -215,30 +457,40 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
     checked={true}
     pointToLayer={
       (f, ll) => {
+
+        const mapType = {
+          'Campsite': '#00a5e3',
+          'Cemetery': '#8dd7bf',
+          'Inscription': '#ff90c5',
+          'Isolated Building/Feature': '#ff5768',
+          'Isolated/Scatter of Finds': '#ffbf65',
+          'Rock Art': '#c05780',
+          'Settlement': '#cff800'
+        }
         return L.circleMarker(ll, {
           radius: 4,
-          fillColor: '#00ffff',
+          fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
           color: "#000",
           weight: 1,
           opacity: 1,
           fillOpacity: 0.8
         });
-      }}
-      filter={f => (f.properties.ph4 === 'X') }
+      }
+    }
+    filter={f => (f.properties.ph4 === 'X') }
   />
 </MapComp>
-  </div>
-  <div className="col-md-4">
+  </Col>
+  <Col md={4}>
+
     ### Phase 5
     <MapComp
   height="400px"
-  path2geojson="../data/toponimi.geojson"
-  name="Siti"
   center= "24.173,32.911,9"
   baseLayers="EsriSatellite, EsriTopo, OSM">
   
   <VectorLayer 
-    name="Siti"
+    name="Sites"
     path2geojson="../data/sites.geojson"
     popupTemplate={
       (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
@@ -248,30 +500,40 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
     checked={true}
     pointToLayer={
       (f, ll) => {
+
+        const mapType = {
+          'Campsite': '#00a5e3',
+          'Cemetery': '#8dd7bf',
+          'Inscription': '#ff90c5',
+          'Isolated Building/Feature': '#ff5768',
+          'Isolated/Scatter of Finds': '#ffbf65',
+          'Rock Art': '#c05780',
+          'Settlement': '#cff800'
+        }
         return L.circleMarker(ll, {
           radius: 4,
-          fillColor: '#00ffff',
+          fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
           color: "#000",
           weight: 1,
           opacity: 1,
           fillOpacity: 0.8
         });
-      }}
-      filter={f => (f.properties.ph5 === 'X') }
+      }
+    }
+    filter={f => (f.properties.ph5 === 'X') }
   />
 </MapComp>
-  </div>
-  <div className="col-md-4">
+  </Col>
+  <Col md={4}>
+
     ### Phase 6
     <MapComp
   height="400px"
-  path2geojson="../data/toponimi.geojson"
-  name="Siti"
   center= "24.173,32.911,9"
   baseLayers="EsriSatellite, EsriTopo, OSM">
   
   <VectorLayer 
-    name="Siti"
+    name="Sites"
     path2geojson="../data/sites.geojson"
     popupTemplate={
       (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
@@ -281,17 +543,28 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
     checked={true}
     pointToLayer={
       (f, ll) => {
+
+        const mapType = {
+          'Campsite': '#00a5e3',
+          'Cemetery': '#8dd7bf',
+          'Inscription': '#ff90c5',
+          'Isolated Building/Feature': '#ff5768',
+          'Isolated/Scatter of Finds': '#ffbf65',
+          'Rock Art': '#c05780',
+          'Settlement': '#cff800'
+        }
         return L.circleMarker(ll, {
           radius: 4,
-          fillColor: '#00ffff',
+          fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
           color: "#000",
           weight: 1,
           opacity: 1,
           fillOpacity: 0.8
         });
-      }}
+      }
+    }
       filter={f => (f.properties.ph6 === 'X') }
   />
 </MapComp>
-  </div>
-</div>
+  </Col>
+</Row>

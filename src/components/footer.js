@@ -127,7 +127,7 @@ const FooterSection = () => {
               rel="noreferrer noopener"
             >
               <StaticImage
-                src="../images/scms-lad.png"
+                src="../images/lad.svg"
                 formats={["AUTO", "WEBP"]}
                 alt="sCMS by LAD"
                 width={100}
@@ -144,6 +144,12 @@ const FooterSection = () => {
             WebGIS of Egyptian State Formation and the Changing Socio-Spatial
             Landscape of the Nile First Cataract Region in the 4th and 3rd
             millennia BCE
+          </p>
+        </div>
+
+        <div className="text-center mt-3 pt-3 border-top">
+          <p className="p-s-3">
+            This site has been built with <span style={{color: '#1963f7'}}>♥</span> by <a href="https://purl.org/lad" target="_blank" rel="noreferrer noopener" title="LAD: Laboratorio di Archeologia Digitale alla Sapienza">LAD @Sapienza</a>
           </p>
         </div>
       </Container>
