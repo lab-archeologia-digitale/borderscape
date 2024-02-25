@@ -23,21 +23,28 @@ import DataTb from "../modules/datatb.js"
       name: "Name",
       selector: row => row.name,
       sortable: true,
+      wrap: true,
+      minWidth: '170px',
     },
     {
       name: "Locality",
       selector: row => row.locality,
       sortable: true,
+      wrap: true,
     },
     {
       name: "Macrotype",
       selector: row => row.macrotype,
       sortable: true,
+      wrap: true,
+      minWidth: '150px',
     },
     {
       name: "Site type",
       selector: row => row.type,
       sortable: true,
+      wrap: true,
+      minWidth: '170px',
     },
     {
       name: "Phase 1",
@@ -83,12 +90,26 @@ import DataTb from "../modules/datatb.js"
       name: "Bibliography",
       selector: row => row.bibliography,
       sortable: true,
+      wrap: true,
+      minWidth: '250px',
     },
     {
       name: "Project",
       selector: row => row.project,
       sortable: true,
     },
+    {
+      name: "X coordinate",
+      selector: row => row.xcoord,
+      wrap: true,
+      minWidth: '170px',
+    },
+    {
+      name: "Y coordinate",
+      selector: row => row.ycoord,
+      wrap: true,
+      minWidth: '170px',
+    }
     
   ]}
 />
