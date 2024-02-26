@@ -12,12 +12,13 @@ require("dotenv").config({
  */
 
 module.exports = {
-  pathPrefix: process.env.NODE_ENV === 'production' ? '/borderscape/' : '/',
+  // pathPrefix: process.env.NODE_ENV === 'production' ? '/borderscape/' : '/',
+  pathPrefix: process.env.NODE_ENV === '/',
   siteMetadata: {
     title: `BORDERSCAPE`,
     description: `BORDERSCAPE | WebGIS: State Formation and Settlement Patterns in the Ancient Egyptian Southern Border, 4th-3rd millennia BCE`,
     author: `Julian Bogdani <julian.bogdani@uniroma1.it>`,
-    siteUrl: `https://lab-archeologia-digitale.github.io/borderscape/`,
+    siteUrl: `https://webgis.borderscapeproject.org/`,
   },
   plugins: [
     `gatsby-plugin-image`,
