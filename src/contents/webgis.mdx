@@ -317,7 +317,7 @@ import { Row, Col } from "react-bootstrap"
       baseLayers="EsriSatellite, EsriTopo, OSM">
   
       <VectorLayer 
-        name="Sites"
+        name="Campsites"
         path2geojson="../data/sites.geojson"
         popupTemplate={
           (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
@@ -327,19 +327,9 @@ import { Row, Col } from "react-bootstrap"
         checked={true}
         pointToLayer={
           (f, ll) => {
-
-            const mapType = {
-              'Campsite': '#00a5e3',
-              'Cemetery': '#8dd7bf',
-              'Inscription': '#ff90c5',
-              'Isolated Building/Feature': '#ff5768',
-              'Isolated/Scatter of Finds': '#ffbf65',
-              'Rock Art': '#c05780',
-              'Settlement': '#cff800'
-            }
             return L.circleMarker(ll, {
               radius: 4,
-              fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+              fillColor: '#00a5e3',
               color: "#000",
               weight: 1,
               opacity: 1,
@@ -347,7 +337,145 @@ import { Row, Col } from "react-bootstrap"
             });
           }
         }
-        filter={f => (f.properties.ph1 === 'X') }
+        filter={f => (f.properties.ph1 === 'X' && f.properties.macrotype === 'Campsite') }
+      />
+      <VectorLayer 
+        name="Cemetery"
+        path2geojson="../data/sites.geojson"
+        popupTemplate={
+          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
+          <br />— ${attribs.type}
+          <hr />${attribs.bibliography}` }
+        }
+        checked={true}
+        pointToLayer={
+          (f, ll) => {
+            return L.circleMarker(ll, {
+              radius: 4,
+              fillColor: '#8dd7bf',
+              color: "#000",
+              weight: 1,
+              opacity: 1,
+              fillOpacity: 0.8
+            });
+          }
+        }
+        filter={f => (f.properties.ph1 === 'X' && f.properties.macrotype === 'Cemetery') }
+      />
+      <VectorLayer 
+        name="Inscription"
+        path2geojson="../data/sites.geojson"
+        popupTemplate={
+          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
+          <br />— ${attribs.type}
+          <hr />${attribs.bibliography}` }
+        }
+        checked={true}
+        pointToLayer={
+          (f, ll) => {
+            return L.circleMarker(ll, {
+              radius: 4,
+              fillColor: '#ff90c5',
+              color: "#000",
+              weight: 1,
+              opacity: 1,
+              fillOpacity: 0.8
+            });
+          }
+        }
+        filter={f => (f.properties.ph1 === 'X' && f.properties.macrotype === 'Inscription') }
+      />
+      <VectorLayer 
+        name="Isolated Building/Feature"
+        path2geojson="../data/sites.geojson"
+        popupTemplate={
+          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
+          <br />— ${attribs.type}
+          <hr />${attribs.bibliography}` }
+        }
+        checked={true}
+        pointToLayer={
+          (f, ll) => {
+            return L.circleMarker(ll, {
+              radius: 4,
+              fillColor: '#ff5768',
+              color: "#000",
+              weight: 1,
+              opacity: 1,
+              fillOpacity: 0.8
+            });
+          }
+        }
+        filter={f => (f.properties.ph1 === 'X' && f.properties.macrotype === 'Isolated Building/Feature') }
+      />
+      <VectorLayer 
+        name="Isolated/Scatter of Finds"
+        path2geojson="../data/sites.geojson"
+        popupTemplate={
+          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
+          <br />— ${attribs.type}
+          <hr />${attribs.bibliography}` }
+        }
+        checked={true}
+        pointToLayer={
+          (f, ll) => {
+            return L.circleMarker(ll, {
+              radius: 4,
+              fillColor: '#ffbf65',
+              color: "#000",
+              weight: 1,
+              opacity: 1,
+              fillOpacity: 0.8
+            });
+          }
+        }
+        filter={f => (f.properties.ph1 === 'X' && f.properties.macrotype === 'Isolated/Scatter of Finds') }
+      />
+      <VectorLayer 
+        name="Rock Art"
+        path2geojson="../data/sites.geojson"
+        popupTemplate={
+          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
+          <br />— ${attribs.type}
+          <hr />${attribs.bibliography}` }
+        }
+        checked={true}
+        pointToLayer={
+          (f, ll) => {
+            return L.circleMarker(ll, {
+              radius: 4,
+              fillColor: '#c05780',
+              color: "#000",
+              weight: 1,
+              opacity: 1,
+              fillOpacity: 0.8
+            });
+          }
+        }
+        filter={f => (f.properties.ph1 === 'X' && f.properties.macrotype === 'Rock Art') }
+      />
+      <VectorLayer 
+        name="Settlement"
+        path2geojson="../data/sites.geojson"
+        popupTemplate={
+          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
+          <br />— ${attribs.type}
+          <hr />${attribs.bibliography}` }
+        }
+        checked={true}
+        pointToLayer={
+          (f, ll) => {
+            return L.circleMarker(ll, {
+              radius: 4,
+              fillColor: '#cff800',
+              color: "#000",
+              weight: 1,
+              opacity: 1,
+              fillOpacity: 0.8
+            });
+          }
+        }
+        filter={f => (f.properties.ph1 === 'X' && f.properties.macrotype === 'Settlement') }
       />
 </MapComp>
   </Col>
