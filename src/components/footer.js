@@ -147,7 +147,7 @@ const FooterSection = () => {
           </p>
           <p className="my-1">
             The BORDERSCAPE Project received funding from the Norwegian Financial
-            Mechanism 2014-2021
+            Mechanism 2014-2021 (grant no. POLS 2020/37/K/HS3/04097).
           </p>
         </div>
 
