@@ -132,11 +132,6 @@ const IndexPage = () => (
           . Journal of Open Archaeological Data.
         </li>
       </ul>
-
-      <p className="lead mt-5 pt-5 border-top">
-        The BORDERSCAPE Project received funding from the Norwegian Financial
-        Mechanism 2014-2021
-      </p>
     </Container>
   </Layout>
 )
