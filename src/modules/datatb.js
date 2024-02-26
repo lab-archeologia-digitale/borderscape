@@ -114,7 +114,7 @@ const DataTb = props => {
     <>
       <input
         type="text"
-        className="form-control mb-5"
+        className="form-control mb-5 border-success"
         value={searchText}
         placeholder="Search..."
         onChange={handleSearch}
