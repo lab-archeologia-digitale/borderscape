@@ -11,8 +11,9 @@ import DataTb from "../modules/datatb.js"
 # The BORDERSCAPE WebGIS Site List
 
 <DataTb
-  path2csv="../data/sites.csv"
-  dColumns={[
+  path2csv = "../data/sites.csv"
+  dColumns = {
+    [
     {
       name: "Codex",
       selector: row => row.codex,
@@ -81,7 +82,8 @@ import DataTb from "../modules/datatb.js"
       selector: row => row.c14,
       sortable: true,
       wrap: true,
-      minWidth: '150px',    },
+      minWidth: '150px',
+    },
     {
       name: "Accuracy",
       selector: row => row.accuracy,
@@ -109,9 +111,9 @@ import DataTb from "../modules/datatb.js"
       selector: row => row.ycoord,
       wrap: true,
     }
-    
-  ]}
-/>
+
+    ]}
+    />
 
 ---
 
@@ -178,6 +180,7 @@ import DataTb from "../modules/datatb.js"
   - **4**: Medium high. Substantial information available, including location and chronology. Data from survey and/or excavation up to modern standards. Maps, photos, and drawings of good standards. 
   - **5**: High. Excellent information, including location and chronology. Data from survey and excavation up to modern standards. Detailed maps, photos, and drawings available. Scientific analyses occasionally available.
 - `Bibliography`: list of major bibliographical references for each site in abbreviated format (detailed version in separate file).
+- `Project`: list of archaeological projects that have worked at each site in abbreviated format. In a few instances, no project could be linked to a site investigation. 
   - **AKAP**: Aswan-Kom Ombo Archaeological Project
   - **ASN**: Archaeological Survey of Nubia
   - **Bonn**: Bonner Rheinischen Frieriech-Wilhelms-Universität
