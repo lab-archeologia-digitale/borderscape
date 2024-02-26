@@ -24,7 +24,7 @@ const IndexPage = () => (
         <a href="https://www.ncn.gov.pl/en">
           National Science Centre of Poland
         </a>{" "}
-        (grant n. POLS 2020/37/K/HS3/04097). The project is hosted by the{" "}
+        (grant no. POLS 2020/37/K/HS3/04097). The project is hosted by the{" "}
         <a href="http://www.iksiopan.pl/index.php/pl/">
           Institute of Mediterranean and Oriental Cultures, Polish Academy of
           Sciences, Warsaw
