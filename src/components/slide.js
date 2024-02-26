@@ -9,58 +9,46 @@ function Slide() {
       <Carousel>
         <Carousel.Item>
         <StaticImage
-            src="../images/desert/desert-1.jpg"
+            src="../images/desert/01-nile-at-first-cataract.jpg"
             className="d-block w-100"
             formats={["AUTO", "WEBP"]}
             alt="slide2"
           />
            <Carousel.Caption>
-            <p>LORE IPSUM DOLOR SIT AMET</p>
-            <span className="subTitle">
-              Nulla vitae elit libero, a pharetra augue mollis interdum.
-            </span>
+            <p>The Nile at the First Cataract (© AKAP Archive)</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <StaticImage
-            src="../images/desert/desert-2.jpg"
+            src="../images/desert/02-dynasty-zero-rock-art.jpg"
             className="d-block w-100"
             formats={["AUTO", "WEBP"]}
             alt="slide2"
           />
           <Carousel.Caption>
-            <p>LORE IPSUM DOLOR SIT AMET</p>
-            <span className="subTitle">
-              Nulla vitae elit libero, a pharetra augue mollis interdum.
-            </span>
+            <p>Documenting Dynasty Zero rock art at Nag el-Hamdulab (© AKAP Archive)</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <StaticImage
-            src="../images/desert/desert-3.jpg"
+            src="../images/desert/03-predynastic-cemetery.jpg"
             className="d-block w-100"
             formats={["AUTO", "WEBP"]}
             alt="slide3"
           />
           <Carousel.Caption>
-            <p>LORE IPSUM DOLOR SIT AMET</p>
-            <span className="subTitle">
-              Nulla vitae elit libero, a pharetra augue mollis interdum.
-            </span>
+            <p>Excavating the Predynastic cemetery of Nag el-Qarmila (© AKAP Archive)</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <StaticImage
-            src="../images/desert/desert-4.jpg"
+            src="../images/desert/04-eastern-desert.jpg"
             className="d-block w-100"
             formats={["AUTO", "WEBP"]}
             alt="slide3"
           />
           <Carousel.Caption>
-            <p>LORE IPSUM DOLOR SIT AMET</p>
-            <span className="subTitle">
-              Nulla vitae elit libero, a pharetra augue mollis interdum.
-            </span>
+            <p>Surveying the Eastern Desert at Wadi Abu Subeira (© AKAP Archive)</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
