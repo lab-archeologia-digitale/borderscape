@@ -1,164 +1,164 @@
-codex,name,locality,macrotype,type,ph1,ph2,ph3,ph4,ph5,ph6,c14,accuracy,bibliography,project,xcoord,ycoord
-001,el-Raghayim,el-Raghayim el-Bid,Isolated/Scatter of Finds,Scatter of Artifacts,X,X,/,/,/,/,/,1,"Butzer and Hansen 1968, 191",YUPEN,3679370,2822690
-002,Kom Ombo,Kom Ombo,Settlement,Urban Center,/,/,/,X,X,X,/,5,Forstner-Müller et al. 2020,ÖAW,3665630,2808636
-003,New Masmas,New Masmas,Settlement,Campsite,X,X,/,/,/,/,/,1,"Butzer and Hansen 1968, 191",YUPEN,3679669,2808590
-004,Wadi Kharit,Wadi Kharit,Settlement,Campsite,/,X,/,/,/,/,"4660±100BP (Isotopes, Inc. I-2567)",2,"Butzer and Hansen 1968, 191-192",YUPEN,3691853,2809499
-005,WT2,Wadi el-Tawil,Isolated/Scatter of Finds,Scatter of Artifacts,X,X,/,/,/,/,/,2,Unpublished,AKAP,3660181,2786675
-006,WT4,Wadi el-Tawil,Isolated/Scatter of Finds,Scatter of Artifacts,X,X,X,/,/,/,/,2,Unpublished,AKAP,3660095,2786625
-007,WT5,Wadi el-Tawil,Isolated/Scatter of Finds,Scatter of Artifacts,X,X,X,/,/,/,/,3,Unpublished,AKAP,3659982,2786475
-008,WT6,Wadi el-Tawil,Settlement,Storage Area,X,X,/,/,/,/,/,5,Oliveira 2023,AKAP,3660689,2787184
-009,WT6,Wadi el-Tawil,Cemetery,Cluster of Tombs,/,/,X,/,/,/,/,4,Unpublished,AKAP,3660690,2787183
-010,WT7,Wadi el-Tawil,Rock Art,Isolated Rock Art,X,X,X,/,/,/,/,2,Unpublished,AKAP,3660625,2787460
-011,WT11,Wadi el-Tawil,Rock Art,Isolated Rock Art,X,X,X,/,/,/,/,2,Unpublished,AKAP,3659814,2787208
-012,WT12a,Wadi el-Tawil,Rock Art,Cluster of Rock Art,X,X,X,/,/,/,/,4,Gatto 2021,AKAP,3659647,2787405
-013,WT12a,Wadi el-Tawil,Isolated/Scatter of Finds,Scatter of Artifacts,/,/,X,/,/,/,/,3,Gatto 2021,AKAP,3659651,2787425
-014,WT12b,Wadi el-Tawil,Isolated/Scatter of Finds,Isolated Find,/,/,X,/,/,/,/,4,Gatto 2021,AKAP,3659652,2787425
-015,WT12c,Wadi el-Tawil,Rock Art,Isolated Rock Art,/,/,X,/,/,/,/,4,Gatto 2021,AKAP,3659623,2787393
-016,WT16,Wadi el-Tawil,Rock Art,Cluster of Rock Art,X,X,X,/,/,/,/,2,Unpublished,AKAP,3659842,2786757
-017,WT19,Wadi el-Tawil,Isolated/Scatter of Finds,Scatter of Artifacts,/,/,X,/,/,/,/,4,Unpublished,AKAP,3659911,2787581
-018,WT26,Wadi el-Tawil,Rock Art,Isolated Rock Art,X,X,/,/,/,/,/,3,Unpublished,AKAP,3659753,2787615
-019,WT27,Wadi el-Tawil,Settlement,Village,X,X,/,/,/,/,/,4,Unpublished,AKAP,3660537,2787067
-020,AH3,Abu Heta,Rock Art,Isolated Rock Art,X,/,/,/,/,/,/,3,Unpublished,AKAP,3657679,2784612
-021,AH4,Abu Heta,Rock Art,Isolated Rock Art,/,/,/,/,/,X,/,2,Unpublished,AKAP,3657650,2784522
-022,AH5,Abu Heta,Rock Art,Isolated Rock Art,/,/,X,X,/,/,/,4,Unpublished,AKAP,3657656,2784576
-023,Khor el-Aqaba el-Saghira North,Khor el-Aqaba el-Saghira,Rock Art,Cluster of Rock Art,X,X,X,X,/,/,/,1,Kelany 2020,SCA,3661851,2783390
-024,Khor el-Aqaba el-Saghira South,Khor el-Aqaba el-Saghira,Rock Art,Cluster of Rock Art,X,X,X,X,/,/,/,1,Kelany 2020,SCA,3662440,2782636
-025,KASN1,Khor Abu Subeira North,Rock Art,Cluster of Rock Art,X,X,X,X,X,X,/,2,Unpublished,AKAP,3665573,2780103
-026,KASN2,Khor Abu Subeira North,Rock Art,Isolated Rock Art,X,X,X,X,/,/,/,2,Unpublished,AKAP,3665520,2780286
-027,Wadi el Malik,Wadi el Malik,Rock Art,Dispersed Concentration of Rock Art,X,X,X,/,/,/,/,2,Morenz et al. 2020,SCA; Bonn,3668824,2777614
-028,WAS1,Wadi Abu Subeira,Rock Art,Cluster of Rock Art,X,X,/,/,/,X,/,3,"Gatto et al. 2009c, 19",AKAP,3659837,2780408
-029,WAS2,Wadi Abu Subeira,Rock Art,Isolated Rock Art,/,/,/,/,/,X,/,2,Unpublished,AKAP,3660056,2780335
-030,WAS4,Wadi Abu Subeira,Rock Art,Isolated Rock Art,/,/,/,/,/,X,/,3,Unpublished,AKAP,3660223,2780321
-031,WAS5,Wadi Abu Subeira,Rock Art,Isolated Rock Art,/,/,/,/,/,X,/,3,Unpublished,AKAP,3661476,2780454
-032,WAS6,Wadi Abu Subeira,Rock Art,Clustered Concentration of Rock Art,X,X,X,X,X,X,/,4,"Červíček 1974, 92-96; Storemyr et al. 2008, 155-158; Gatto et al. 2009c, 19; Kelany 2013 and 2020",AKAP,3662057,2779685
-033,WAS8,Wadi Abu Subeira,Rock Art,Isolated Rock Art,X,X,X,X,/,/,/,2,Unpublished,AKAP,3664440,2779456
-034,WAS17,Wadi Abu Subeira,Rock Art,Isolated Rock Art,X,X,/,/,/,/,/,2,Unpublished,AKAP,3661556,2780605
-035,WAS19,Wadi Abu Subeira,Rock Art,Cluster of Rock Art,X,X,X,X,/,X,/,2,Unpublished,AKAP,3661200,2780309
-036,WAS14,Wadi Abu Subeira,Rock Art,Cluster of Rock Art,X,X,X,X,/,/,/,3,Unpublished,AKAP,3683850,2781330
-037,WAS15,Wadi Abu Subeira,Rock Art,Cluster of Rock Art,/,/,/,X,X,X,/,3,Unpublished,AKAP,3682530,2782088
-038,WASRAP East,Wadi Abu Subeira,Rock Art,Dispersed Concentration of Rock Art,X,X,X,X,X,X,/,2,https://wasrap.wixsite.com/wasrap,WASRAP,3677058,2780998
-039,KASS1,Khor Abu Subeira South,Rock Art,Dispersed Concentration of Rock Art,X,X,X,X,/,/,/,4,Murray and Myers 1933; Gatto et al. 2009a; Curci et al. 2012; Lippiello 2012; Lippiello and Gatto 2012,AKAP,3665738,2776238
-040,KASS5,Khor Abu Subeira South,Rock Art,Cluster of Rock Art,/,/,/,X,/,/,/,2,Gatto et al. 2009c,AKAP,3666315,2775868
-041,KASS6,Khor Abu Subeira South,Rock Art,Cluster of Rock Art,/,/,/,X,X,X,/,2,Unpublished,AKAP,3666431,2775967
-042,KASS7,Khor Abu Subeira South,Rock Art,Isolated Rock Art,X,X,X,/,/,/,/,2,Unpublished,AKAP,3666063,2775614
-043,KASS8,Khor Abu Subeira South,Rock Art,Isolated Rock Art,/,/,X,X,/,/,/,2,Unpublished,AKAP,3666752,2774876
-044,KASS10,Khor Abu Subeira South,Rock Art,Cluster of Rock Art,/,X,X,X,/,/,/,2,Unpublished,AKAP,3665845,2776347
-045,Wadi el-Arab,Wadi el-Arab,Rock Art,Cluster of Rock Art,X,X,X,X,X,X,/,2,Kelany 2018,SCA,3660983,2774152
-046,Wadi Sheikh Umran,Wadi Sheikh Umran,Rock Art,Cluster of Rock Art,/,X,X,X,X,X,/,2,Kelany 2018,SCA,3661210,2773871
-047,Wadi Agbab,Wadi Agbab,Rock Art,Cluster of Rock Art,/,X,X,/,/,X,/,2,Kelany 2018,SCA,3661660,2773233
-048,WK4,Wadi Kubbaniya,Inscription,Isolated Rock Inscription,/,/,/,/,/,X,/,5,"Gatto et al. 2009c, 17 (with previous bibliography)",AKAP,3658044,2777940
-049,WK6,Wadi Kubbaniya,Cemetery,Small-size Cemetery,X,X,/,/,/,/,/,3,Junker 1920,AKAP; ÖAW,3657634,2779099
-050,WK14,Wadi Kubbaniya,Cemetery,Medium-size Cemetery,X,X,/,/,/,/,/,5,"Gatto 2009, 2013, 2014 and 2016; Gatto et al. 2009b, 2009c and 2010; Pitre et al. 2016; Hart 2017",AKAP,3658082,2782213
-051,WK15,Wadi Kubbaniya,Settlement,Village,X,X,X,/,/,/,4230±50BP (IFAO152); 4955±50BP (IFAO153); 4917±50BP (IFAO151); 5040±50BP (IFAO154),5,"Gatto 2009, 2013, 2014 and 2016; Gatto et al. 2009b, 2009c and 2010; Pitre et al. 2016; Hart 2017",AKAP,3658051,2782150
-052,WK16,Wadi Kubbaniya,Rock Art,Cluster of Rock Art,/,X,X,/,/,X,/,3,Unpublished,AKAP,3658098,2777726
-053,WK19,Wadi Kubbaniya,Rock Art,Cluster of Rock Art,X,/,/,/,/,/,/,2,Unpublished,AKAP,3655631,2782143
-054,WK22,Wadi Kubbaniya,Settlement,Storage Area,X,X,/,/,/,/,/,5,"Gatto 2009, 2013, 2014 and 2016; Gatto et al. 2009b, 2009c and 2010; Pitre et al. 2016; Hart 2017; Oliveira 2023",AKAP,3657935,2782007
-055,WK22,Wadi Kubbaniya,Cemetery,Isolated Tomb,/,/,X,/,/,/,/,2,Gatto 2016,AKAP,3657936,2782001
-056,WK39,Wadi Kubbaniya,Rock Art,Cluster of Rock Art,X,X,X,X,/,/,/,3,Unpublished,AKAP,3655422,2778751
-057,WK41,Wadi Kubbaniya,Rock Art,Isolated Rock Art,/,X,X,X,/,/,/,2,Unpublished,AKAP,3655208,2779153
-058,WK50,Wadi Kubbaniya,Isolated/Scatter of Finds,Scatter of Artifacts,X,X,/,/,/,X,/,2,Unpublished,AKAP,3651132,2787909
-059,WK58,Wadi Kubbaniya,Isolated/Scatter of Finds,Isolated Find,/,X,X,/,/,/,/,3,Unpublished,AKAP,3651054,2787824
-060,WK70,Wadi Kubbaniya,Rock Art,Isolated Rock Art,/,X,/,/,/,/,/,3,Unpublished,AKAP,3657987,2782377
-061,SM6,Sheikh Mohamed,Cemetery,Large-size Cemetery,X,X,X,/,/,/,/,5,Junker 1919,AKAP; ÖAW,3658561,2774295
-062,SM13,Sheikh Mohamed,Rock Art,Clustered Concentration of Rock Art,X,X,X,X,X,X,/,4,de Morgan et al. 1894; Gatto et al. 2009a and 2009c,AKAP,3658285,2776530
-063,SM13,Sheikh Mohamed,Isolated/Scatter of Finds,Scatter of Artifacts,/,/,/,/,/,X,/,5,"Giuliani 2013, 70 fig. 2",AKAP,3658285,2776530
-064,SM16,Sheikh Mohamed,Rock Art,Dispersed Concentration of Rock Art,X,X,X,/,/,/,/,4,Gatto et al. 2009a and 2009c,AKAP,3658882,2773273
-065,SM18,Sheikh Mohamed,Rock Art,Cluster of Rock Art,X,X,/,X,X,X,/,4,Unpublished,AKAP,3658383,2775376
-066,SM22,Sheikh Mohamed,Settlement,Campsite,/,/,/,/,X,/,/,5,Unpublished,AKAP,3658826,2773048
-067,SM26,Sheikh Mohamed,Rock Art,Cluster of Rock Art,X,X,X,/,/,/,/,4,Unpublished,AKAP,3658281,2774300
-068,SM28,Sheikh Mohamed,Rock Art,Cluster of Rock Art,/,/,X,/,/,/,/,5,Unpublished,AKAP,3658358,2775269
-069,SM36,Sheikh Mohamed,Rock Art,Isolated Rock Art,/,/,/,X,/,/,/,5,Vanhulle forthcoming,AKAP,3658340,2775305
-070,WQ3,Wadi el-Qurna,Rock Art,Isolated Rock Art,/,/,X,X,/,/,/,5,Unpublished,AKAP,3657292,2771074
-071,WQ12,Wadi el-Qurna,Rock Art,Isolated Rock Art,/,/,X,X,/,/,/,2,Unpublished,AKAP,3657197,2773484
-072,WQ17,Wadi el-Qurna,Rock Art,Isolated Rock Art,/,X,X,/,/,/,/,2,Unpublished,AKAP,3657289,2771026
-073,WQ22,Wadi el-Qurna,Rock Art,Cluster of Rock Art,/,X,X,X,/,/,/,2,Unpublished,AKAP,3657539,2774086
-074,WF14,Wadi el-Faras,Rock Art,Cluster of Rock Art,/,/,X,X,/,/,/,3,Unpublished,AKAP,3658447,2770878
-075,WF15,Wadi el-Faras,Rock Art,Cluster of Rock Art,X,X,/,/,/,/,/,3,Unpublished,AKAP,3658460,2769782
-076,WF16,Wadi el-Faras,Rock Art,Clustered Concentration of Rock Art,X,X,X,/,/,/,/,4,Winkler 1939; Storemyr 2009,AKAP; Quarryscapes,3657652,2769543
-077,WF17,Wadi el-Faras,Rock Art,Cluster of Rock Art,X,X,X,/,/,/,/,4,"Storemyr 2009 (Gazelle Hill/EB129A-D, P825)",AKAP; Quarryscapes,3658240,2768581
-078,WF18,Wadi el-Faras,Rock Art,Cluster of Rock Art,X,X,X,/,/,/,/,4,Storemyr 2009 (Giraffe Hill (EB128A-D),AKAP; Quarryscapes,3658353,2768324
-079,WF19,Wadi el-Faras,Rock Art,Isolated Rock Art,X,/,/,/,/,/,/,3,Unpublished,AKAP,3657926,2769568
-080,NH1,Nag el-Hamdulab,Rock Art,Dispersed Concentration of Rock Art,/,/,X,/,/,/,/,5,"de Morgan et al. 1894; Hendrickx and Gatto2009; Hendrickx et al. 2009, 2012, 2015, 2016 and 2017; Darnell 2015.",AKAP,3659050,2769315
-081,NH10,Nag el-Hamdulab,Settlement,"Scatter of Artifacts, possible village",/,/,X,/,/,/,/,2,Unpublished,AKAP,3660218,2769451
-082,NH12,Nag el-Hamdulab,Inscription,Isolated Rock Inscription,/,/,/,/,/,X,/,5,de Morgan et al. 1894; Jiménez-Serrano 2013 (with previous bibliography),AKAP,3659542,2770798
-083,NH12 Panel 2 (giraffe),Nag el-Hamdulab,Rock Art,Isolated Rock Art,X,X,/,/,/,/,/,4,Unpublished,AKAP,3659547,2770795
-084,NH14,Nag el-Hamdulab,Rock Art,Isolated Rock Art,/,/,X,X,X,X,/,2,Unpublished,AKAP,3659479,2769571
-085,NH16,Nag el-Hamdulab,Cemetery,Funerary Monument,X,X,X,/,/,/,/,4,Unpublished,AKAP,3659010,2769414
-086,WES1,Wadi Umm Sawan,Rock Art,Isolated Rock Art,/,/,X,/,/,/,/,5,Storemyr 2009 (P-829-A),AKAP; Quarryscapes,3658034,2766782
-087,NQ4,Nag el-Qubba,Isolated/Scatter of Finds,"Scatter of Artifacts, possible cemetery",/,/,X,/,/,/,/,2,Unpublished,AKAP,3661311,2766893
-088,Qubbet el-Hawa,Qubbet el-Hawa,Cemetery,Monumental Cemetery,/,/,/,/,X,X,/,5,"Jiménez-Serrano 2013, 2023; Jiménez-Serrano and Sánchez-León 2019; Vischak 2015; Edel 1967–1971; Edel et al. 2008",SCA; Bonn; Jaén,3661355,2765922
-089,Morenz Inscription QeH,Qubbet el-Hawa,Rock Art,Isolated Rock Art,/,/,X,/,/,/,/,3,Morenz 2020,Bonn,3661342,2765957
-090,Qubbet el-Hawa South,Qubbet el-Hawa,Rock Art,Cluster of Rock Art,X,X,X,/,/,/,/,3,Jiménez-Serrano 2009; Jiménez-Serrano and Graff 2016,Jaén,3660766,2765204
-091,Wadi Abu Agag Loc. 1,Wadi Abu Agag,Inscription,Isolated Rock Inscription,/,/,/,/,/,X,/,4,"Schweinfurth 1912; Oren Siegel, pers. Comm.",/,3663373,2767641
-092,Wadi Abu Agag Loc. 3,Wadi Abu Agag,Rock Art,Cluster of Rock Art,/,/,/,X,X,X,/,1,Schweinfurth 1912,/,3664836,2768551
-093,Wadi Abu Agag Loc. 4,Wadi Abu Agag,Rock Art,Cluster of Rock Art,/,X,X,X,X,/,/,3,Schweinfurth 1912,/,3666397,2768275
-094,Syene Area 2,Aswan City,Settlement,"Domestic Quarter, production area",/,/,/,/,X,/,/,5,von Pilgrim et al. 2018,SIA,3661686,2763548
-095,Syene Area 2,Aswan City,Settlement,Domestic Quarter,X,X,/,X,/,/,/,4,von Pilgrim et al. 2018,SIA,3661693,2763551
-096,Syene Area 2,Aswan City,Cemetery,Cluster of Tombs,/,/,/,/,/,X,/,5,von Pilgrim et al. 2018,SIA,3661685,2763542
-097,Syene Area 3,Aswan City,Isolated/Scatter of Finds,"Scatter of Artifacts, possible quarry",/,/,/,/,/,X,/,2,von Pilgrim et al. 2018,SIA,3661719,2763851
-098,Syene Area 31,Aswan City,Isolated/Scatter of Finds,"Scatter of Artifacts, possible quarry",/,/,/,/,/,X,/,2,von Pilgrim et al. 2018,SIA,3661960,2764377
-099,Syene Area 32,Aswan City,Isolated/Scatter of Finds,"Scatter of Artifacts, possible quarry",/,/,/,/,/,X,/,2,von Pilgrim et al. 2018,SIA,3661328,2763490
-100,Syene Area 37,Aswan City,Isolated/Scatter of Finds,Scatter of Artifacts,/,/,/,/,X,X,/,4,von Pilgrim et al. 2018,SIA,3661807,2764161
-101,Syene Area 45,Aswan City,Isolated/Scatter of Finds,Scatter of Artifacts,/,/,/,/,X,X,/,4,von Pilgrim et al. 2018,SIA,3661834,2764151
-102,Syene Area 59,Aswan City,Settlement,Domestic Quarter,X,X,/,/,/,/,/,4,von Pilgrim et al. 2018,SIA,3661525,2763170
-103,Syene Area 60,Aswan City,Isolated/Scatter of Finds,Scatter of Artifacts,/,/,/,/,X,X,/,4,von Pilgrim et al. 2018,SIA,3660952,2763409
-104,"Syene Harbor Area (18,23,72-74,89)",Aswan City,Isolated Building/Feature,Harbor Installation,/,/,/,/,X,X,/,5,von Pilgrim et al. 2018,SIA,3662156,2764531
-105,Elephantine Harbor,Elephantine Island,Inscription,Cluster of Rock Inscriptions,/,/,/,/,X,X,/,5,Seidlmayer 2003,DAIK,3661051,2763803
-106,Elephantine Fortress,Elephantine Island,Isolated Building/Feature,Fortress,/,/,/,X,/,/,/,5,Ziermann 1993,DAIK,3660763,2763726
-107,Elephantine Western Cemetery,Elephantine Island,Cemetery,Medium-size Cemetery,/,/,/,/,/,X,/,5,Kaiser et al. 1980,DAIK,3660797,2763861
-108,Elephantine,Elephantine Island,Settlement,Proto-Urban Center,/,/,X,/,/,/,/,5,Kopp 2006,DAIK,3660897,2763692
-109,Elephantine Pyramid,Elephantine Island,Isolated Building/Feature,Pyramid,/,/,/,/,X,/,/,5,Dreyer and Kaiser 1980; Kaiser et al. 1980; Seidlmayer 1996,DAIK,3660802,2763844
-110,Elephantine Southern Cemetery,Elephantine Island,Cemetery,Small-size Cemetery,/,X,X,X,/,/,/,3,Dreyer et al. 2008,DAIK,3660718,2763761
-111,Elephantine,Elephantine Island,Settlement,Urban Center,/,/,/,/,X,X,/,5,Möller 2006,DAIK,3660907,2763710
-112,Elephantine,Elephantine Island,Settlement,Village,/,X,/,/,/,/,/,4,Kopp 2006; Raue 2018,DAIK,3660881,2763795
-113,Sehel Island,Sehel Island,Inscription,Concentration of Rock Inscriptions,/,/,/,/,X,X,/,5,"de Morgan et al. 1894, 75-103; Porter and Moss 1962, 249-253; Gasse and Rondot 2007; Blöbaum 2013",IFAO,3659455,2760436
-114,Wadi Berber Site 1a,Wadi Berber,Rock Art,Isolated Rock Art,/,/,/,/,X,X,/,5,Döhl 2020,DAIK,3659805,2763621
-115,Wadi Berber Site 1b,Wadi Berber,Rock Art,Cluster of Rock Art,X,X,X,/,X,X,/,5,Döhl 2020,DAIK,3659575,2763201
-116,Wadi Berber Site 1d,Wadi Berber,Rock Art,Cluster of Rock Art,/,/,X,/,X,X,/,5,Döhl 2020,DAIK,3659172,2762962
-117,Wadi Berber Site 1e,Wadi Berber,Rock Art,Cluster of Rock Art,X,X,/,/,/,/,/,5,Döhl 2020,DAIK,3659167,2762909
-118,"Shellal, Wadi Road","Shellal, Wadi Road",Inscription,"Isolated Rock Inscription, location uncertain",/,/,/,/,/,X,/,4,"Petrie 1888, pl. XIII n. 338; Delia 1993; Strudwick 2005, 134 n. 51; Liszka 2012, 153; von Pilgrim 2021",/,3661605,2757874
-119,Cemetery 7,Shellal,Cemetery,Extensive Cemetery,X,X,X,X,/,X,/,4,"Weigall 1907, 33-34; Reisner 1910",ASN,3661989,2756619
-120,"Shellal, Tishi","Shellal, Tishi",Inscription,"Isolated Rock Inscription, location uncertain",/,/,/,/,/,X,/,4,"Sayce 1894; Weigall 1907, 34; von Pilgrim 2021",/,3660220,2753443
-121,Site 6,Wadi el-Hudi,Rock Art,Cluster of Rock Art,/,/,/,/,X,X,/,5,"Unpublished, Liszka per. comm.",WHE,3688060,2749278
-122,Site 43,Wadi el-Hudi,Cemetery,Cluster of Tombs,/,X,/,/,/,/,/,5,"Unpublished, Liszka per. comm.",WHE,3688823,2754814
-123,Cemetery 14,Khor Ambukol,Cemetery,Medium-size Cemetery,X,/,X,/,/,X,/,3,"Reisner 1910, 141-146",ASN,3660695,2747186
-124,Cemetery 17,Khor Bahan,Cemetery,Medium-size Cemetery,X,X,X,/,/,/,/,4,"Reisner 1910, 114-141",ASN,3660089,2746508
-125,Cemetery 22,Mahdi el-Qadi,Cemetery,Small-size Cemetery,/,X,/,/,/,X,/,2,"Weigall 1907, 59; Reisner 1910, 180-186",ASN,3658675,2739835
-126,Cemetery 23,Naziria,Cemetery,Small-size Cemetery,X,X,/,/,/,X,/,2,"Weigall 1907, 59; Reisner 1910, 156-169; Curto et al. 1987",ASN; IMET,3658559,2740076
-127,Cemetery 30,Ras Um Salim,Cemetery,Small-size Cemetery,X,X,X,/,/,X,/,2,"Reisner 1910, 190-199",ASN,3661068,2737090
-128,Camp Near Cemetery 23,Dibtod,Settlement,Village,/,/,X,/,/,/,/,2,"Weigall 1907, 59; Reisner 1910, 169-178",ASN,3657933,2741417
-129,Cemetery 40,Siali,Cemetery,Small-size Cemetery,/,/,X,/,/,/,/,2,"Reisner 1910, 233; Porter and Moss 1995, 38",ASN,3664132,2732050
-130,Cemetery 41,Meris,Cemetery,Medium-size Cemetery,X,X,X,/,/,X,/,2,"Reisner 1910, 206-230",ASN,3662425,2732311
-131,Archaic Camp 41,Meris,Settlement,Village,X,X,X,/,/,/,/,2,"Reisner 1910, 206-230",ASN,3662424,2732117
-132,Cemetery 43,Abisko,Cemetery,Small-size Cemetery,/,X,/,/,/,/,/,2,"Reisner 1910, 245-256",ASN,3663641,2729262
-133,Cemetery 44,Khor Berastod,Cemetery,Small-size Cemetery,/,X,/,/,/,/,/,2,"Reisner 1910, 256-258",ASN,3665042,2726506
-134,Cemetery 45,Khor Berastod,Cemetery,Medium-size Cemetery,X,X,X,/,/,X,/,2,"Reisner 1910, 258-276",ASN,3664676,2725989
-135,Nag el-Wasi' G1,Nag Wasi',Rock Art,Isolated Rock Art,/,/,X,/,/,/,/,4,"Reisner 1910; Curto et al. 1987, 29 and pl. 24 fig. 1",IMET,3663209,2729244
-136,Khor Dabruk G3,Khor Dabruk,Rock Art,Isolated Rock Art,/,/,/,X,/,/,/,3,"Reisner 1910; Curto et al. 1987, 30 and pl. 24 fig. 3",IMET,3663385,2728579
-137,Khor Dabruk G5,Khor Dabruk,Rock Art,Isolated Rock Art,/,X,X,X,/,/,/,3,"Curto et al. 1987, 30 and pl. 24 fig. 6",IMET,3662241,2728409
-138,Khor el Nag Kharm Dol G12,Khor el Nag Kharm Dol,Rock Art,Cluster of Rock Art,/,/,X,X,X,X,/,3,"Curto et al. 1987, 34 and pl. 38 figs. 54-55",IMET,3665639,2727332
-139,Nag Max G13,Nag Max,Rock Art,Cluster of Rock Art,X,X,X,/,/,/,/,3,"Curto et al. 1987, 34-35 and pls. 38-40 (figs. 56-62)",IMET,3664833,2726806
-140,Nag Mettar Ali G6,Nag Mettar Ali,Rock Art,Cluster of Rock Art,X,X,X,/,/,/,/,3,"Curto et al. 1987, 30-31 and pls. 25-26",IMET,3663284,2726875
-141,Nag el-Wasi' G2,Nag el-Wasi',Rock Art,Isolated Rock Art,X,X,X,/,/,/,/,3,"Reisner 1910; Curto et al. 1987, 29 and pl. 24 fig. 2",IMET,3663200,2729123
-142,Khor Dabruk G4,Khor Dabruk,Rock Art,Cluster of Rock Art,X,X,X,/,/,/,/,3,"Reisner 1910; Curto et al. 1987, 30 and pl. 24 figs. 4-5",IMET,3663216,2728409
-143,Khor Fahmi G7,Khor Fahmi,Rock Art,Cluster of Rock Art,X,X,X,X,/,/,/,3,"Curto et al. 1987, 31-33 and pls. 27-36",IMET,3662990,2726644
-144,Cemetery 47,Bugga,Cemetery,Small-size Cemetery,/,X,X,/,/,/,/,2,"Reisner 1910, 277-281",ASN,3663311,2722822
-145,Cemetery 46,Wadi Shem Nishei,Cemetery,Small-size Cemetery,/,/,X,/,/,/,/,2,"Reisner 1910, 276",ASN,3663314,2722778
-146,Khor Qinawi G10,Khor Qinawi,Rock Art,Isolated Rock Art,X,X,X,/,X,X,/,3,"Curto et al. 1987, 33-34 and pl. 37 fig. 52",IMET,3661775,2722518
-147,Cemetery 51,Metatod,Cemetery,Small-size Cemetery,/,/,X,/,/,/,/,2,"Reisner 1910, 297-298",ASN,3661652,2721296
-148,Cemetery 49,Jer,Cemetery,Small-size Cemetery,/,X,/,/,/,/,/,2,"Reisner 1910, 283-284",ASN,3662874,2721189
-149,Khor Fakhari el-Bahari G11,Khor Fakhari el-Bahari,Rock Art,Isolated Rock Art,X,X,X,/,/,/,/,3,"Curto et al. 1987, 34 and pl. 37 fig. 53 and photo 22",IMET,3661676,2721671
-150,"Khor Dehmit (N), G14",Khor Dehmit,Rock Art,Cluster of Rock Art,X,X,X,X,X,X,/,3,"Curto et al. 1987, 35 and pl. 40 figs. 63-4",IMET,3662967,2721257
-151,Khor Dehmit G15,Khor Dehmit,Rock Art,Cluster of Rock Art,X,X,X,/,/,/,/,3,"Curto et al. 1987, 35 and pl. 41",IMET,3664475,2721704
-152,"Khor Dehmit (S), G16",Khor Dehmit,Rock Art,Cluster of Rock Art,X,X,X,X,X,X,/,3,"Curto et al. 1987, 35 and pl. 42",IMET,3662907,2720824
-153,Cemetery 50A,Metardul,Cemetery,Medium-size Cemetery,/,X,X,X,/,/,/,2,"Reisner 1910, 284-296",ASN,3662839,2717835
-154,Cemetery 54,Ginari,Cemetery,Small-size Cemetery,/,X,/,/,/,/,/,2,"Reisner 1910, no description",ASN,3659431,2710449
-155,Nuq Maneih,Nuq Maneih,Settlement,Concentration of Campsites,X,X,X,X,X,X,/,3,Darnell and Darnell 2013,Yale,3609609,2794124
-156,Kurkur Oasis Campsite,Kurkur Oasis,Settlement,Medium-size Long-term Campsite,X,X,X,/,/,/,/,5,Darnell and Darnell 2013,Yale,3598267,2741745
-157,WAN14,Wadi Umm Netishat,Rock Art,Cluster of Rock Art,X,X,X,/,/,/,/,3,Unpublished,AKAP,3710585,2784969
-158,RasrasA,Wadi Rasras,Rock Art,Clustered Concentration of Rock Art,X,X,X,X,/,X,/,4,Vanhulle et al. forthcoming,AKAP,3706147,2782681
-159,RasrasB,Wadi Rasras,Rock Art,Dispersed Concentration of Rock Art,X,X,X,X,/,/,/,4,Vanhulle et al. forthcoming,AKAP,3708038,2782164
-160,RasrasCDE,Wadi Rasras,Rock Art,Dense Concentration of Rock Art,X,X,X,X,/,/,/,4,Vanhulle et al. forthcoming,AKAP,3710384,2780567
-161,RasrasF,Wadi Rasras,Rock Art,Dispersed Concentration of Rock Art,X,X,X,X,/,/,/,4,Vanhulle et al. forthcoming,AKAP,3711597,2779157
-162,RAS4,Wadi Rasras,Isolated/Scatter of Finds,Scatter of Artifacts in Shelter,X,X,X,/,/,/,/,2,Unpublished,AKAP,3708587,2781982
-163,RAS6,Wadi Rasras,Isolated/Scatter of Finds,Isolated Find,/,/,X,/,/,/,/,3,Unpublished,AKAP,3708811,2783028
+id,codex,name,locality,macrotype,type,ph1,ph2,ph3,ph4,ph5,ph6,c14,accuracy,bibliography,project,xcoord,ycoord,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1,001,el-Raghayim,el-Raghayim,el-Bid,Isolated/Scatter,of,Finds,Scatter,of,Artifacts,X,X,/,/,/,/,/,1,"Butzer and Hansen 1968, 191",YUPEN,3679370,2822690,,,,,,,,,,,,,,,,,,,,,,,,
+2,002,Kom,Ombo,Kom,Ombo,Settlement,Urban,Center,/,/,/,X,X,X,/,5,Forstner-Müller,et,al.,2020,ÖAW,3665630,2808636,,,,,,,,,,,,,,,,,,,,,,,
+3,003,New,Masmas,New,Masmas,Settlement,Campsite,X,X,/,/,/,/,/,1,"Butzer and Hansen 1968, 191",YUPEN,3679669,2808590,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4,004,Wadi,Kharit,Wadi,Kharit,Settlement,Campsite,/,X,/,/,/,/,"4660±100BP (Isotopes, Inc. I-2567)",2,"Butzer and Hansen 1968, 191-192",YUPEN,3691853,2809499,,,,,,,,,,,,,,,,,,,,,,,,,,,
+5,005,WT2,Wadi,el-Tawil,Isolated/Scatter,of,Finds,Scatter,of,Artifacts,X,X,/,/,/,/,/,2,Unpublished,AKAP,3660181,2786675,,,,,,,,,,,,,,,,,,,,,,,,
+6,006,WT4,Wadi,el-Tawil,Isolated/Scatter,of,Finds,Scatter,of,Artifacts,X,X,X,/,/,/,/,2,Unpublished,AKAP,3660095,2786625,,,,,,,,,,,,,,,,,,,,,,,,
+7,007,WT5,Wadi,el-Tawil,Isolated/Scatter,of,Finds,Scatter,of,Artifacts,X,X,X,/,/,/,/,3,Unpublished,AKAP,3659982,2786475,,,,,,,,,,,,,,,,,,,,,,,,
+8,008,WT6,Wadi,el-Tawil,Settlement,Storage,Area,X,X,/,/,/,/,/,5,Oliveira,2023,AKAP,3660689,2787184,,,,,,,,,,,,,,,,,,,,,,,,,,
+9,009,WT6,Wadi,el-Tawil,Cemetery,Cluster,of,Tombs,/,/,X,/,/,/,/,4,Unpublished,AKAP,3660690,2787183,,,,,,,,,,,,,,,,,,,,,,,,,,
+10,010,WT7,Wadi,el-Tawil,Rock,Art,Isolated,Rock,Art,X,X,X,/,/,/,/,2,Unpublished,AKAP,3660625,2787460,,,,,,,,,,,,,,,,,,,,,,,,,
+11,011,WT11,Wadi,el-Tawil,Rock,Art,Isolated,Rock,Art,X,X,X,/,/,/,/,2,Unpublished,AKAP,3659814,2787208,,,,,,,,,,,,,,,,,,,,,,,,,
+12,012,WT12a,Wadi,el-Tawil,Rock,Art,Cluster,of,Rock,Art,X,X,X,/,/,/,/,4,Gatto,2021,AKAP,3659647,2787405,,,,,,,,,,,,,,,,,,,,,,,
+13,013,WT12a,Wadi,el-Tawil,Isolated/Scatter,of,Finds,Scatter,of,Artifacts,/,/,X,/,/,/,/,3,Gatto,2021,AKAP,3659651,2787425,,,,,,,,,,,,,,,,,,,,,,,
+14,014,WT12b,Wadi,el-Tawil,Isolated/Scatter,of,Finds,Isolated,Find,/,/,X,/,/,/,/,4,Gatto,2021,AKAP,3659652,2787425,,,,,,,,,,,,,,,,,,,,,,,,
+15,015,WT12c,Wadi,el-Tawil,Rock,Art,Isolated,Rock,Art,/,/,X,/,/,/,/,4,Gatto,2021,AKAP,3659623,2787393,,,,,,,,,,,,,,,,,,,,,,,,
+16,016,WT16,Wadi,el-Tawil,Rock,Art,Cluster,of,Rock,Art,X,X,X,/,/,/,/,2,Unpublished,AKAP,3659842,2786757,,,,,,,,,,,,,,,,,,,,,,,,
+17,017,WT19,Wadi,el-Tawil,Isolated/Scatter,of,Finds,Scatter,of,Artifacts,/,/,X,/,/,/,/,4,Unpublished,AKAP,3659911,2787581,,,,,,,,,,,,,,,,,,,,,,,,
+18,018,WT26,Wadi,el-Tawil,Rock,Art,Isolated,Rock,Art,X,X,/,/,/,/,/,3,Unpublished,AKAP,3659753,2787615,,,,,,,,,,,,,,,,,,,,,,,,,
+19,019,WT27,Wadi,el-Tawil,Settlement,Village,X,X,/,/,/,/,/,4,Unpublished,AKAP,3660537,2787067,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+20,020,AH3,Abu,Heta,Rock,Art,Isolated,Rock,Art,X,/,/,/,/,/,/,3,Unpublished,AKAP,3657679,2784612,,,,,,,,,,,,,,,,,,,,,,,,,
+21,021,AH4,Abu,Heta,Rock,Art,Isolated,Rock,Art,/,/,/,/,/,X,/,2,Unpublished,AKAP,3657650,2784522,,,,,,,,,,,,,,,,,,,,,,,,,
+22,022,AH5,Abu,Heta,Rock,Art,Isolated,Rock,Art,/,/,X,X,/,/,/,4,Unpublished,AKAP,3657656,2784576,,,,,,,,,,,,,,,,,,,,,,,,,
+23,023,Khor,el-Aqaba,el-Saghira,North,Khor,el-Aqaba,el-Saghira,Rock,Art,Cluster,of,Rock,Art,X,X,X,X,/,/,/,1,Kelany,2020,SCA,3661851,2783390,,,,,,,,,,,,,,,,,,,
+24,024,Khor,el-Aqaba,el-Saghira,South,Khor,el-Aqaba,el-Saghira,Rock,Art,Cluster,of,Rock,Art,X,X,X,X,/,/,/,1,Kelany,2020,SCA,3662440,2782636,,,,,,,,,,,,,,,,,,,
+25,025,KASN1,Khor,Abu,Subeira,North,Rock,Art,Cluster,of,Rock,Art,X,X,X,X,X,X,/,2,Unpublished,AKAP,3665573,2780103,,,,,,,,,,,,,,,,,,,,,,
+26,026,KASN2,Khor,Abu,Subeira,North,Rock,Art,Isolated,Rock,Art,X,X,X,X,/,/,/,2,Unpublished,AKAP,3665520,2780286,,,,,,,,,,,,,,,,,,,,,,,
+27,027,Wadi,el,Malik,Wadi,el,Malik,Rock,Art,Dispersed,Concentration,of,Rock,Art,X,X,X,/,/,/,/,2,Morenz,et,al.,2020,SCA,,Bonn,3668824,2777614,,,,,,,,,,,,,,,
+28,028,WAS1,Wadi,Abu,Subeira,Rock,Art,Cluster,of,Rock,Art,X,X,/,/,/,X,/,3,"Gatto et al. 2009c, 19",AKAP,3659837,2780408,,,,,,,,,,,,,,,,,,,,,,,
+29,029,WAS2,Wadi,Abu,Subeira,Rock,Art,Isolated,Rock,Art,/,/,/,/,/,X,/,2,Unpublished,AKAP,3660056,2780335,,,,,,,,,,,,,,,,,,,,,,,,
+30,030,WAS4,Wadi,Abu,Subeira,Rock,Art,Isolated,Rock,Art,/,/,/,/,/,X,/,3,Unpublished,AKAP,3660223,2780321,,,,,,,,,,,,,,,,,,,,,,,,
+31,031,WAS5,Wadi,Abu,Subeira,Rock,Art,Isolated,Rock,Art,/,/,/,/,/,X,/,3,Unpublished,AKAP,3661476,2780454,,,,,,,,,,,,,,,,,,,,,,,,
+32,032,WAS6,Wadi,Abu,Subeira,Rock,Art,Clustered,Concentration,of,Rock,Art,X,X,X,X,X,X,/,4,"Červíček 1974, 92-96; Storemyr et al. 2008, 155-158; Gatto et al. 2009c, 19; Kelany 2013 and 2020",AKAP,3662057,2779685,,,,,,,,,,,,,,,,,,,,,,
+33,033,WAS8,Wadi,Abu,Subeira,Rock,Art,Isolated,Rock,Art,X,X,X,X,/,/,/,2,Unpublished,AKAP,3664440,2779456,,,,,,,,,,,,,,,,,,,,,,,,
+34,034,WAS17,Wadi,Abu,Subeira,Rock,Art,Isolated,Rock,Art,X,X,/,/,/,/,/,2,Unpublished,AKAP,3661556,2780605,,,,,,,,,,,,,,,,,,,,,,,,
+35,035,WAS19,Wadi,Abu,Subeira,Rock,Art,Cluster,of,Rock,Art,X,X,X,X,/,X,/,2,Unpublished,AKAP,3661200,2780309,,,,,,,,,,,,,,,,,,,,,,,
+36,036,WAS14,Wadi,Abu,Subeira,Rock,Art,Cluster,of,Rock,Art,X,X,X,X,/,/,/,3,Unpublished,AKAP,3683850,2781330,,,,,,,,,,,,,,,,,,,,,,,
+37,037,WAS15,Wadi,Abu,Subeira,Rock,Art,Cluster,of,Rock,Art,/,/,/,X,X,X,/,3,Unpublished,AKAP,3682530,2782088,,,,,,,,,,,,,,,,,,,,,,,
+38,038,WASRAP,East,Wadi,Abu,Subeira,Rock,Art,Dispersed,Concentration,of,Rock,Art,X,X,X,X,X,X,/,2,https://wasrap.wixsite.com/wasrap,WASRAP,3677058,2780998,,,,,,,,,,,,,,,,,,,,,
+39,039,KASS1,Khor,Abu,Subeira,South,Rock,Art,Dispersed,Concentration,of,Rock,Art,X,X,X,X,/,/,/,4,Murray,and,Myers,1933,,Gatto,et,al.,2009a,,Curci,et,al.,2012,,Lippiello,2012,,Lippiello,and,Gatto,2012,AKAP,3665738,2776238
+40,040,KASS5,Khor,Abu,Subeira,South,Rock,Art,Cluster,of,Rock,Art,/,/,/,X,/,/,/,2,Gatto,et,al.,2009c,AKAP,3666315,2775868,,,,,,,,,,,,,,,,,,,
+41,041,KASS6,Khor,Abu,Subeira,South,Rock,Art,Cluster,of,Rock,Art,/,/,/,X,X,X,/,2,Unpublished,AKAP,3666431,2775967,,,,,,,,,,,,,,,,,,,,,,
+42,042,KASS7,Khor,Abu,Subeira,South,Rock,Art,Isolated,Rock,Art,X,X,X,/,/,/,/,2,Unpublished,AKAP,3666063,2775614,,,,,,,,,,,,,,,,,,,,,,,
+43,043,KASS8,Khor,Abu,Subeira,South,Rock,Art,Isolated,Rock,Art,/,/,X,X,/,/,/,2,Unpublished,AKAP,3666752,2774876,,,,,,,,,,,,,,,,,,,,,,,
+44,044,KASS10,Khor,Abu,Subeira,South,Rock,Art,Cluster,of,Rock,Art,/,X,X,X,/,/,/,2,Unpublished,AKAP,3665845,2776347,,,,,,,,,,,,,,,,,,,,,,
+45,045,Wadi,el-Arab,Wadi,el-Arab,Rock,Art,Cluster,of,Rock,Art,X,X,X,X,X,X,/,2,Kelany,2018,SCA,3660983,2774152,,,,,,,,,,,,,,,,,,,,,,
+46,046,Wadi,Sheikh,Umran,Wadi,Sheikh,Umran,Rock,Art,Cluster,of,Rock,Art,/,X,X,X,X,X,/,2,Kelany,2018,SCA,3661210,2773871,,,,,,,,,,,,,,,,,,,,
+47,047,Wadi,Agbab,Wadi,Agbab,Rock,Art,Cluster,of,Rock,Art,/,X,X,/,/,X,/,2,Kelany,2018,SCA,3661660,2773233,,,,,,,,,,,,,,,,,,,,,,
+48,048,WK4,Wadi,Kubbaniya,Inscription,Isolated,Rock,Inscription,/,/,/,/,/,X,/,5,"Gatto et al. 2009c, 17 (with previous bibliography)",AKAP,3658044,2777940,,,,,,,,,,,,,,,,,,,,,,,,,,
+49,049,WK6,Wadi,Kubbaniya,Cemetery,Small-size,Cemetery,X,X,/,/,/,/,/,3,Junker,1920,AKAP,,ÖAW,3657634,2779099,,,,,,,,,,,,,,,,,,,,,,,,
+50,050,WK14,Wadi,Kubbaniya,Cemetery,Medium-size,Cemetery,X,X,/,/,/,/,/,5,"Gatto 2009, 2013, 2014 and 2016; Gatto et al. 2009b, 2009c and 2010; Pitre et al. 2016; Hart 2017",AKAP,3658082,2782213,,,,,,,,,,,,,,,,,,,,,,,,,,,
+51,051,WK15,Wadi,Kubbaniya,Settlement,Village,X,X,X,/,/,/,4230±50BP,(IFAO152),,4955±50BP,(IFAO153),,4917±50BP,(IFAO151),,5040±50BP,(IFAO154),5,"Gatto 2009, 2013, 2014 and 2016; Gatto et al. 2009b, 2009c and 2010; Pitre et al. 2016; Hart 2017",AKAP,3658051,2782150,,,,,,,,,,,,,,,,,,
+52,052,WK16,Wadi,Kubbaniya,Rock,Art,Cluster,of,Rock,Art,/,X,X,/,/,X,/,3,Unpublished,AKAP,3658098,2777726,,,,,,,,,,,,,,,,,,,,,,,,
+53,053,WK19,Wadi,Kubbaniya,Rock,Art,Cluster,of,Rock,Art,X,/,/,/,/,/,/,2,Unpublished,AKAP,3655631,2782143,,,,,,,,,,,,,,,,,,,,,,,,
+54,054,WK22,Wadi,Kubbaniya,Settlement,Storage,Area,X,X,/,/,/,/,/,5,"Gatto 2009, 2013, 2014 and 2016; Gatto et al. 2009b, 2009c and 2010; Pitre et al. 2016; Hart 2017; Oliveira 2023",AKAP,3657935,2782007,,,,,,,,,,,,,,,,,,,,,,,,,,,
+55,055,WK22,Wadi,Kubbaniya,Cemetery,Isolated,Tomb,/,/,X,/,/,/,/,2,Gatto,2016,AKAP,3657936,2782001,,,,,,,,,,,,,,,,,,,,,,,,,,
+56,056,WK39,Wadi,Kubbaniya,Rock,Art,Cluster,of,Rock,Art,X,X,X,X,/,/,/,3,Unpublished,AKAP,3655422,2778751,,,,,,,,,,,,,,,,,,,,,,,,
+57,057,WK41,Wadi,Kubbaniya,Rock,Art,Isolated,Rock,Art,/,X,X,X,/,/,/,2,Unpublished,AKAP,3655208,2779153,,,,,,,,,,,,,,,,,,,,,,,,,
+58,058,WK50,Wadi,Kubbaniya,Isolated/Scatter,of,Finds,Scatter,of,Artifacts,X,X,/,/,/,X,/,2,Unpublished,AKAP,3651132,2787909,,,,,,,,,,,,,,,,,,,,,,,,
+59,059,WK58,Wadi,Kubbaniya,Isolated/Scatter,of,Finds,Isolated,Find,/,X,X,/,/,/,/,3,Unpublished,AKAP,3651054,2787824,,,,,,,,,,,,,,,,,,,,,,,,,
+60,060,WK70,Wadi,Kubbaniya,Rock,Art,Isolated,Rock,Art,/,X,/,/,/,/,/,3,Unpublished,AKAP,3657987,2782377,,,,,,,,,,,,,,,,,,,,,,,,,
+61,061,SM6,Sheikh,Mohamed,Cemetery,Large-size,Cemetery,X,X,X,/,/,/,/,5,Junker,1919,AKAP,,ÖAW,3658561,2774295,,,,,,,,,,,,,,,,,,,,,,,,
+62,062,SM13,Sheikh,Mohamed,Rock,Art,Clustered,Concentration,of,Rock,Art,X,X,X,X,X,X,/,4,de,Morgan,et,al.,1894,,Gatto,et,al.,2009a,and,2009c,AKAP,3658285,2776530,,,,,,,,,,,,
+63,063,SM13,Sheikh,Mohamed,Isolated/Scatter,of,Finds,Scatter,of,Artifacts,/,/,/,/,/,X,/,5,"Giuliani 2013, 70 fig. 2",AKAP,3658285,2776530,,,,,,,,,,,,,,,,,,,,,,,,
+64,064,SM16,Sheikh,Mohamed,Rock,Art,Dispersed,Concentration,of,Rock,Art,X,X,X,/,/,/,/,4,Gatto,et,al.,2009a,and,2009c,AKAP,3658882,2773273,,,,,,,,,,,,,,,,,,
+65,065,SM18,Sheikh,Mohamed,Rock,Art,Cluster,of,Rock,Art,X,X,/,X,X,X,/,4,Unpublished,AKAP,3658383,2775376,,,,,,,,,,,,,,,,,,,,,,,,
+66,066,SM22,Sheikh,Mohamed,Settlement,Campsite,/,/,/,/,X,/,/,5,Unpublished,AKAP,3658826,2773048,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+67,067,SM26,Sheikh,Mohamed,Rock,Art,Cluster,of,Rock,Art,X,X,X,/,/,/,/,4,Unpublished,AKAP,3658281,2774300,,,,,,,,,,,,,,,,,,,,,,,,
+68,068,SM28,Sheikh,Mohamed,Rock,Art,Cluster,of,Rock,Art,/,/,X,/,/,/,/,5,Unpublished,AKAP,3658358,2775269,,,,,,,,,,,,,,,,,,,,,,,,
+69,069,SM36,Sheikh,Mohamed,Rock,Art,Isolated,Rock,Art,/,/,/,X,/,/,/,5,Vanhulle,forthcoming,AKAP,3658340,2775305,,,,,,,,,,,,,,,,,,,,,,,,
+70,070,WQ3,Wadi,el-Qurna,Rock,Art,Isolated,Rock,Art,/,/,X,X,/,/,/,5,Unpublished,AKAP,3657292,2771074,,,,,,,,,,,,,,,,,,,,,,,,,
+71,071,WQ12,Wadi,el-Qurna,Rock,Art,Isolated,Rock,Art,/,/,X,X,/,/,/,2,Unpublished,AKAP,3657197,2773484,,,,,,,,,,,,,,,,,,,,,,,,,
+72,072,WQ17,Wadi,el-Qurna,Rock,Art,Isolated,Rock,Art,/,X,X,/,/,/,/,2,Unpublished,AKAP,3657289,2771026,,,,,,,,,,,,,,,,,,,,,,,,,
+73,073,WQ22,Wadi,el-Qurna,Rock,Art,Cluster,of,Rock,Art,/,X,X,X,/,/,/,2,Unpublished,AKAP,3657539,2774086,,,,,,,,,,,,,,,,,,,,,,,,
+74,074,WF14,Wadi,el-Faras,Rock,Art,Cluster,of,Rock,Art,/,/,X,X,/,/,/,3,Unpublished,AKAP,3658447,2770878,,,,,,,,,,,,,,,,,,,,,,,,
+75,075,WF15,Wadi,el-Faras,Rock,Art,Cluster,of,Rock,Art,X,X,/,/,/,/,/,3,Unpublished,AKAP,3658460,2769782,,,,,,,,,,,,,,,,,,,,,,,,
+76,076,WF16,Wadi,el-Faras,Rock,Art,Clustered,Concentration,of,Rock,Art,X,X,X,/,/,/,/,4,Winkler,1939,,Storemyr,2009,AKAP,,Quarryscapes,3657652,2769543,,,,,,,,,,,,,,,,,
+77,077,WF17,Wadi,el-Faras,Rock,Art,Cluster,of,Rock,Art,X,X,X,/,/,/,/,4,"Storemyr 2009 (Gazelle Hill/EB129A-D, P825)",AKAP,,Quarryscapes,3658240,2768581,,,,,,,,,,,,,,,,,,,,,,
+78,078,WF18,Wadi,el-Faras,Rock,Art,Cluster,of,Rock,Art,X,X,X,/,/,/,/,4,Storemyr,2009,(Giraffe,Hill,(EB128A-D),AKAP,,Quarryscapes,3658353,2768324,,,,,,,,,,,,,,,,,,
+79,079,WF19,Wadi,el-Faras,Rock,Art,Isolated,Rock,Art,X,/,/,/,/,/,/,3,Unpublished,AKAP,3657926,2769568,,,,,,,,,,,,,,,,,,,,,,,,,
+80,080,NH1,Nag,el-Hamdulab,Rock,Art,Dispersed,Concentration,of,Rock,Art,/,/,X,/,/,/,/,5,"de Morgan et al. 1894; Hendrickx and Gatto2009; Hendrickx et al. 2009, 2012, 2015, 2016 and 2017; Darnell 2015.",AKAP,3659050,2769315,,,,,,,,,,,,,,,,,,,,,,,
+81,081,NH10,Nag,el-Hamdulab,Settlement,"Scatter of Artifacts, possible village",/,/,X,/,/,/,/,2,Unpublished,AKAP,3660218,2769451,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+82,082,NH12,Nag,el-Hamdulab,Inscription,Isolated,Rock,Inscription,/,/,/,/,/,X,/,5,de,Morgan,et,al.,1894,,Jiménez-Serrano,2013,(with,previous,bibliography),AKAP,3659542,2770798,,,,,,,,,,,,,,,,
+83,083,NH12,Panel,2,(giraffe),Nag,el-Hamdulab,Rock,Art,Isolated,Rock,Art,X,X,/,/,/,/,/,4,Unpublished,AKAP,3659547,2770795,,,,,,,,,,,,,,,,,,,,,,
+84,084,NH14,Nag,el-Hamdulab,Rock,Art,Isolated,Rock,Art,/,/,X,X,X,X,/,2,Unpublished,AKAP,3659479,2769571,,,,,,,,,,,,,,,,,,,,,,,,,
+85,085,NH16,Nag,el-Hamdulab,Cemetery,Funerary,Monument,X,X,X,/,/,/,/,4,Unpublished,AKAP,3659010,2769414,,,,,,,,,,,,,,,,,,,,,,,,,,,
+86,086,WES1,Wadi,Umm,Sawan,Rock,Art,Isolated,Rock,Art,/,/,X,/,/,/,/,5,Storemyr,2009,(P-829-A),AKAP,,Quarryscapes,3658034,2766782,,,,,,,,,,,,,,,,,,,,
+87,087,NQ4,Nag,el-Qubba,Isolated/Scatter,of,Finds,"Scatter of Artifacts, possible cemetery",/,/,X,/,/,/,/,2,Unpublished,AKAP,3661311,2766893,,,,,,,,,,,,,,,,,,,,,,,,,,
+88,088,Qubbet,el-Hawa,Qubbet,el-Hawa,Cemetery,Monumental,Cemetery,/,/,/,/,X,X,/,5,"Jiménez-Serrano 2013, 2023; Jiménez-Serrano and Sánchez-León 2019; Vischak 2015; Edel 1967–1971; Edel et al. 2008",SCA,,Bonn,,Jaén,3661355,2765922,,,,,,,,,,,,,,,,,,,,,,
+89,089,Morenz,Inscription,QeH,Qubbet,el-Hawa,Rock,Art,Isolated,Rock,Art,/,/,X,/,/,/,/,3,Morenz,2020,Bonn,3661342,2765957,,,,,,,,,,,,,,,,,,,,,,
+90,090,Qubbet,el-Hawa,South,Qubbet,el-Hawa,Rock,Art,Cluster,of,Rock,Art,X,X,X,/,/,/,/,3,Jiménez-Serrano,2009,,Jiménez-Serrano,and,Graff,2016,Jaén,3660766,2765204,,,,,,,,,,,,,,,,
+91,091,Wadi,Abu,Agag,Loc.,1,Wadi,Abu,Agag,Inscription,Isolated,Rock,Inscription,/,/,/,/,/,X,/,4,"Schweinfurth 1912; Oren Siegel, pers. Comm.",/,3663373,2767641,,,,,,,,,,,,,,,,,,,,,
+92,092,Wadi,Abu,Agag,Loc.,3,Wadi,Abu,Agag,Rock,Art,Cluster,of,Rock,Art,/,/,/,X,X,X,/,1,Schweinfurth,1912,/,3664836,2768551,,,,,,,,,,,,,,,,,,
+93,093,Wadi,Abu,Agag,Loc.,4,Wadi,Abu,Agag,Rock,Art,Cluster,of,Rock,Art,/,X,X,X,X,/,/,3,Schweinfurth,1912,/,3666397,2768275,,,,,,,,,,,,,,,,,,
+94,094,Syene,Area,2,Aswan,City,Settlement,"Domestic Quarter, production area",/,/,/,/,X,/,/,5,von,Pilgrim,et,al.,2018,SIA,3661686,2763548,,,,,,,,,,,,,,,,,,,,,,
+95,095,Syene,Area,2,Aswan,City,Settlement,Domestic,Quarter,X,X,/,X,/,/,/,4,von,Pilgrim,et,al.,2018,SIA,3661693,2763551,,,,,,,,,,,,,,,,,,,,,
+96,096,Syene,Area,2,Aswan,City,Cemetery,Cluster,of,Tombs,/,/,/,/,/,X,/,5,von,Pilgrim,et,al.,2018,SIA,3661685,2763542,,,,,,,,,,,,,,,,,,,,
+97,097,Syene,Area,3,Aswan,City,Isolated/Scatter,of,Finds,"Scatter of Artifacts, possible quarry",/,/,/,/,/,X,/,2,von,Pilgrim,et,al.,2018,SIA,3661719,2763851,,,,,,,,,,,,,,,,,,,,
+98,098,Syene,Area,31,Aswan,City,Isolated/Scatter,of,Finds,"Scatter of Artifacts, possible quarry",/,/,/,/,/,X,/,2,von,Pilgrim,et,al.,2018,SIA,3661960,2764377,,,,,,,,,,,,,,,,,,,,
+99,099,Syene,Area,32,Aswan,City,Isolated/Scatter,of,Finds,"Scatter of Artifacts, possible quarry",/,/,/,/,/,X,/,2,von,Pilgrim,et,al.,2018,SIA,3661328,2763490,,,,,,,,,,,,,,,,,,,,
+100,100,Syene,Area,37,Aswan,City,Isolated/Scatter,of,Finds,Scatter,of,Artifacts,/,/,/,/,X,X,/,4,von,Pilgrim,et,al.,2018,SIA,3661807,2764161,,,,,,,,,,,,,,,,,,
+101,101,Syene,Area,45,Aswan,City,Isolated/Scatter,of,Finds,Scatter,of,Artifacts,/,/,/,/,X,X,/,4,von,Pilgrim,et,al.,2018,SIA,3661834,2764151,,,,,,,,,,,,,,,,,,
+102,102,Syene,Area,59,Aswan,City,Settlement,Domestic,Quarter,X,X,/,/,/,/,/,4,von,Pilgrim,et,al.,2018,SIA,3661525,2763170,,,,,,,,,,,,,,,,,,,,,
+103,103,Syene,Area,60,Aswan,City,Isolated/Scatter,of,Finds,Scatter,of,Artifacts,/,/,/,/,X,X,/,4,von,Pilgrim,et,al.,2018,SIA,3660952,2763409,,,,,,,,,,,,,,,,,,
+104,104,"Syene Harbor Area (18,23,72-74,89)",Aswan,City,Isolated,Building/Feature,Harbor,Installation,/,/,/,/,X,X,/,5,von,Pilgrim,et,al.,2018,SIA,3662156,2764531,,,,,,,,,,,,,,,,,,,,,,
+105,105,Elephantine,Harbor,Elephantine,Island,Inscription,Cluster,of,Rock,Inscriptions,/,/,/,/,X,X,/,5,Seidlmayer,2003,DAIK,3661051,2763803,,,,,,,,,,,,,,,,,,,,,,,
+106,106,Elephantine,Fortress,Elephantine,Island,Isolated,Building/Feature,Fortress,/,/,/,X,/,/,/,5,Ziermann,1993,DAIK,3660763,2763726,,,,,,,,,,,,,,,,,,,,,,,,,
+107,107,Elephantine,Western,Cemetery,Elephantine,Island,Cemetery,Medium-size,Cemetery,/,/,/,/,/,X,/,5,Kaiser,et,al.,1980,DAIK,3660797,2763861,,,,,,,,,,,,,,,,,,,,,,
+108,108,Elephantine,Elephantine,Island,Settlement,Proto-Urban,Center,/,/,X,/,/,/,/,5,Kopp,2006,DAIK,3660897,2763692,,,,,,,,,,,,,,,,,,,,,,,,,,
+109,109,Elephantine,Pyramid,Elephantine,Island,Isolated,Building/Feature,Pyramid,/,/,/,/,X,/,/,5,Dreyer,and,Kaiser,1980,,Kaiser,et,al.,1980,,Seidlmayer,1996,DAIK,3660802,2763844,,,,,,,,,,,,,,,
+110,110,Elephantine,Southern,Cemetery,Elephantine,Island,Cemetery,Small-size,Cemetery,/,X,X,X,/,/,/,3,Dreyer,et,al.,2008,DAIK,3660718,2763761,,,,,,,,,,,,,,,,,,,,,,
+111,111,Elephantine,Elephantine,Island,Settlement,Urban,Center,/,/,/,/,X,X,/,5,Möller,2006,DAIK,3660907,2763710,,,,,,,,,,,,,,,,,,,,,,,,,,
+112,112,Elephantine,Elephantine,Island,Settlement,Village,/,X,/,/,/,/,/,4,Kopp,2006,,Raue,2018,DAIK,3660881,2763795,,,,,,,,,,,,,,,,,,,,,,,,
+113,113,Sehel,Island,Sehel,Island,Inscription,Concentration,of,Rock,Inscriptions,/,/,/,/,X,X,/,5,"de Morgan et al. 1894, 75-103; Porter and Moss 1962, 249-253; Gasse and Rondot 2007; Blöbaum 2013",IFAO,3659455,2760436,,,,,,,,,,,,,,,,,,,,,,,,
+114,114,Wadi,Berber,Site,1a,Wadi,Berber,Rock,Art,Isolated,Rock,Art,/,/,/,/,X,X,/,5,Döhl,2020,DAIK,3659805,2763621,,,,,,,,,,,,,,,,,,,,,
+115,115,Wadi,Berber,Site,1b,Wadi,Berber,Rock,Art,Cluster,of,Rock,Art,X,X,X,/,X,X,/,5,Döhl,2020,DAIK,3659575,2763201,,,,,,,,,,,,,,,,,,,,
+116,116,Wadi,Berber,Site,1d,Wadi,Berber,Rock,Art,Cluster,of,Rock,Art,/,/,X,/,X,X,/,5,Döhl,2020,DAIK,3659172,2762962,,,,,,,,,,,,,,,,,,,,
+117,117,Wadi,Berber,Site,1e,Wadi,Berber,Rock,Art,Cluster,of,Rock,Art,X,X,/,/,/,/,/,5,Döhl,2020,DAIK,3659167,2762909,,,,,,,,,,,,,,,,,,,,
+118,118,"Shellal, Wadi Road","Shellal, Wadi Road",Inscription,"Isolated Rock Inscription, location uncertain",/,/,/,/,/,X,/,4,"Petrie 1888, pl. XIII n. 338; Delia 1993; Strudwick 2005, 134 n. 51; Liszka 2012, 153; von Pilgrim 2021",/,3661605,2757874,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+119,119,Cemetery,7,Shellal,Cemetery,Extensive,Cemetery,X,X,X,X,/,X,/,4,"Weigall 1907, 33-34; Reisner 1910",ASN,3661989,2756619,,,,,,,,,,,,,,,,,,,,,,,,,,,
+120,120,"Shellal, Tishi","Shellal, Tishi",Inscription,"Isolated Rock Inscription, location uncertain",/,/,/,/,/,X,/,4,"Sayce 1894; Weigall 1907, 34; von Pilgrim 2021",/,3660220,2753443,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+121,121,Site,6,Wadi,el-Hudi,Rock,Art,Cluster,of,Rock,Art,/,/,/,/,X,X,/,5,"Unpublished, Liszka per. comm.",WHE,3688060,2749278,,,,,,,,,,,,,,,,,,,,,,,
+122,122,Site,43,Wadi,el-Hudi,Cemetery,Cluster,of,Tombs,/,X,/,/,/,/,/,5,"Unpublished, Liszka per. comm.",WHE,3688823,2754814,,,,,,,,,,,,,,,,,,,,,,,,,
+123,123,Cemetery,14,Khor,Ambukol,Cemetery,Medium-size,Cemetery,X,/,X,/,/,X,/,3,"Reisner 1910, 141-146",ASN,3660695,2747186,,,,,,,,,,,,,,,,,,,,,,,,,,
+124,124,Cemetery,17,Khor,Bahan,Cemetery,Medium-size,Cemetery,X,X,X,/,/,/,/,4,"Reisner 1910, 114-141",ASN,3660089,2746508,,,,,,,,,,,,,,,,,,,,,,,,,,
+125,125,Cemetery,22,Mahdi,el-Qadi,Cemetery,Small-size,Cemetery,/,X,/,/,/,X,/,2,"Weigall 1907, 59; Reisner 1910, 180-186",ASN,3658675,2739835,,,,,,,,,,,,,,,,,,,,,,,,,,
+126,126,Cemetery,23,Naziria,Cemetery,Small-size,Cemetery,X,X,/,/,/,X,/,2,"Weigall 1907, 59; Reisner 1910, 156-169; Curto et al. 1987",ASN,,IMET,3658559,2740076,,,,,,,,,,,,,,,,,,,,,,,,,
+127,127,Cemetery,30,Ras,Um,Salim,Cemetery,Small-size,Cemetery,X,X,X,/,/,X,/,2,"Reisner 1910, 190-199",ASN,3661068,2737090,,,,,,,,,,,,,,,,,,,,,,,,,
+128,128,Camp,Near,Cemetery,23,Dibtod,Settlement,Village,/,/,X,/,/,/,/,2,"Weigall 1907, 59; Reisner 1910, 169-178",ASN,3657933,2741417,,,,,,,,,,,,,,,,,,,,,,,,,,
+129,129,Cemetery,40,Siali,Cemetery,Small-size,Cemetery,/,/,X,/,/,/,/,2,"Reisner 1910, 233; Porter and Moss 1995, 38",ASN,3664132,2732050,,,,,,,,,,,,,,,,,,,,,,,,,,,
+130,130,Cemetery,41,Meris,Cemetery,Medium-size,Cemetery,X,X,X,/,/,X,/,2,"Reisner 1910, 206-230",ASN,3662425,2732311,,,,,,,,,,,,,,,,,,,,,,,,,,,
+131,131,Archaic,Camp,41,Meris,Settlement,Village,X,X,X,/,/,/,/,2,"Reisner 1910, 206-230",ASN,3662424,2732117,,,,,,,,,,,,,,,,,,,,,,,,,,,
+132,132,Cemetery,43,Abisko,Cemetery,Small-size,Cemetery,/,X,/,/,/,/,/,2,"Reisner 1910, 245-256",ASN,3663641,2729262,,,,,,,,,,,,,,,,,,,,,,,,,,,
+133,133,Cemetery,44,Khor,Berastod,Cemetery,Small-size,Cemetery,/,X,/,/,/,/,/,2,"Reisner 1910, 256-258",ASN,3665042,2726506,,,,,,,,,,,,,,,,,,,,,,,,,,
+134,134,Cemetery,45,Khor,Berastod,Cemetery,Medium-size,Cemetery,X,X,X,/,/,X,/,2,"Reisner 1910, 258-276",ASN,3664676,2725989,,,,,,,,,,,,,,,,,,,,,,,,,,
+135,135,Nag,el-Wasi',G1,Nag,Wasi',Rock,Art,Isolated,Rock,Art,/,/,X,/,/,/,/,4,"Reisner 1910; Curto et al. 1987, 29 and pl. 24 fig. 1",IMET,3663209,2729244,,,,,,,,,,,,,,,,,,,,,,,
+136,136,Khor,Dabruk,G3,Khor,Dabruk,Rock,Art,Isolated,Rock,Art,/,/,/,X,/,/,/,3,"Reisner 1910; Curto et al. 1987, 30 and pl. 24 fig. 3",IMET,3663385,2728579,,,,,,,,,,,,,,,,,,,,,,,
+137,137,Khor,Dabruk,G5,Khor,Dabruk,Rock,Art,Isolated,Rock,Art,/,X,X,X,/,/,/,3,"Curto et al. 1987, 30 and pl. 24 fig. 6",IMET,3662241,2728409,,,,,,,,,,,,,,,,,,,,,,,
+138,138,Khor,el,Nag,Kharm,Dol,G12,Khor,el,Nag,Kharm,Dol,Rock,Art,Cluster,of,Rock,Art,/,/,X,X,X,X,/,3,"Curto et al. 1987, 34 and pl. 38 figs. 54-55",IMET,3665639,2727332,,,,,,,,,,,,,,,,
+139,139,Nag,Max,G13,Nag,Max,Rock,Art,Cluster,of,Rock,Art,X,X,X,/,/,/,/,3,"Curto et al. 1987, 34-35 and pls. 38-40 (figs. 56-62)",IMET,3664833,2726806,,,,,,,,,,,,,,,,,,,,,,
+140,140,Nag,Mettar,Ali,G6,Nag,Mettar,Ali,Rock,Art,Cluster,of,Rock,Art,X,X,X,/,/,/,/,3,"Curto et al. 1987, 30-31 and pls. 25-26",IMET,3663284,2726875,,,,,,,,,,,,,,,,,,,,
+141,141,Nag,el-Wasi',G2,Nag,el-Wasi',Rock,Art,Isolated,Rock,Art,X,X,X,/,/,/,/,3,"Reisner 1910; Curto et al. 1987, 29 and pl. 24 fig. 2",IMET,3663200,2729123,,,,,,,,,,,,,,,,,,,,,,,
+142,142,Khor,Dabruk,G4,Khor,Dabruk,Rock,Art,Cluster,of,Rock,Art,X,X,X,/,/,/,/,3,"Reisner 1910; Curto et al. 1987, 30 and pl. 24 figs. 4-5",IMET,3663216,2728409,,,,,,,,,,,,,,,,,,,,,,
+143,143,Khor,Fahmi,G7,Khor,Fahmi,Rock,Art,Cluster,of,Rock,Art,X,X,X,X,/,/,/,3,"Curto et al. 1987, 31-33 and pls. 27-36",IMET,3662990,2726644,,,,,,,,,,,,,,,,,,,,,,
+144,144,Cemetery,47,Bugga,Cemetery,Small-size,Cemetery,/,X,X,/,/,/,/,2,"Reisner 1910, 277-281",ASN,3663311,2722822,,,,,,,,,,,,,,,,,,,,,,,,,,,
+145,145,Cemetery,46,Wadi,Shem,Nishei,Cemetery,Small-size,Cemetery,/,/,X,/,/,/,/,2,"Reisner 1910, 276",ASN,3663314,2722778,,,,,,,,,,,,,,,,,,,,,,,,,
+146,146,Khor,Qinawi,G10,Khor,Qinawi,Rock,Art,Isolated,Rock,Art,X,X,X,/,X,X,/,3,"Curto et al. 1987, 33-34 and pl. 37 fig. 52",IMET,3661775,2722518,,,,,,,,,,,,,,,,,,,,,,,
+147,147,Cemetery,51,Metatod,Cemetery,Small-size,Cemetery,/,/,X,/,/,/,/,2,"Reisner 1910, 297-298",ASN,3661652,2721296,,,,,,,,,,,,,,,,,,,,,,,,,,,
+148,148,Cemetery,49,Jer,Cemetery,Small-size,Cemetery,/,X,/,/,/,/,/,2,"Reisner 1910, 283-284",ASN,3662874,2721189,,,,,,,,,,,,,,,,,,,,,,,,,,,
+149,149,Khor,Fakhari,el-Bahari,G11,Khor,Fakhari,el-Bahari,Rock,Art,Isolated,Rock,Art,X,X,X,/,/,/,/,3,"Curto et al. 1987, 34 and pl. 37 fig. 53 and photo 22",IMET,3661676,2721671,,,,,,,,,,,,,,,,,,,,,
+150,150,"Khor Dehmit (N), G14",Khor,Dehmit,Rock,Art,Cluster,of,Rock,Art,X,X,X,X,X,X,/,3,"Curto et al. 1987, 35 and pl. 40 figs. 63-4",IMET,3662967,2721257,,,,,,,,,,,,,,,,,,,,,,,,
+151,151,Khor,Dehmit,G15,Khor,Dehmit,Rock,Art,Cluster,of,Rock,Art,X,X,X,/,/,/,/,3,"Curto et al. 1987, 35 and pl. 41",IMET,3664475,2721704,,,,,,,,,,,,,,,,,,,,,,
+152,152,"Khor Dehmit (S), G16",Khor,Dehmit,Rock,Art,Cluster,of,Rock,Art,X,X,X,X,X,X,/,3,"Curto et al. 1987, 35 and pl. 42",IMET,3662907,2720824,,,,,,,,,,,,,,,,,,,,,,,,
+153,153,Cemetery,50A,Metardul,Cemetery,Medium-size,Cemetery,/,X,X,X,/,/,/,2,"Reisner 1910, 284-296",ASN,3662839,2717835,,,,,,,,,,,,,,,,,,,,,,,,,,,
+154,154,Cemetery,54,Ginari,Cemetery,Small-size,Cemetery,/,X,/,/,/,/,/,2,"Reisner 1910, no description",ASN,3659431,2710449,,,,,,,,,,,,,,,,,,,,,,,,,,,
+155,155,Nuq,Maneih,Nuq,Maneih,Settlement,Concentration,of,Campsites,X,X,X,X,X,X,/,3,Darnell,and,Darnell,2013,Yale,3609609,2794124,,,,,,,,,,,,,,,,,,,,,,
+156,156,Kurkur,Oasis,Campsite,Kurkur,Oasis,Settlement,Medium-size,Long-term,Campsite,X,X,X,/,/,/,/,5,Darnell,and,Darnell,2013,Yale,3598267,2741745,,,,,,,,,,,,,,,,,,,,,
+157,157,WAN14,Wadi,Umm,Netishat,Rock,Art,Cluster,of,Rock,Art,X,X,X,/,/,/,/,3,Unpublished,AKAP,3710585,2784969,,,,,,,,,,,,,,,,,,,,,,,
+158,158,RasrasA,Wadi,Rasras,Rock,Art,Clustered,Concentration,of,Rock,Art,X,X,X,X,/,X,/,4,Vanhulle,et,al.,forthcoming,AKAP,3706147,2782681,,,,,,,,,,,,,,,,,,,,
+159,159,RasrasB,Wadi,Rasras,Rock,Art,Dispersed,Concentration,of,Rock,Art,X,X,X,X,/,/,/,4,Vanhulle,et,al.,forthcoming,AKAP,3708038,2782164,,,,,,,,,,,,,,,,,,,,
+160,160,RasrasCDE,Wadi,Rasras,Rock,Art,Dense,Concentration,of,Rock,Art,X,X,X,X,/,/,/,4,Vanhulle,et,al.,forthcoming,AKAP,3710384,2780567,,,,,,,,,,,,,,,,,,,,
+161,161,RasrasF,Wadi,Rasras,Rock,Art,Dispersed,Concentration,of,Rock,Art,X,X,X,X,/,/,/,4,Vanhulle,et,al.,forthcoming,AKAP,3711597,2779157,,,,,,,,,,,,,,,,,,,,
+162,162,RAS4,Wadi,Rasras,Isolated/Scatter,of,Finds,Scatter,of,Artifacts,in,Shelter,X,X,X,/,/,/,/,2,Unpublished,AKAP,3708587,2781982,,,,,,,,,,,,,,,,,,,,,,
+163,163,RAS6,Wadi,Rasras,Isolated/Scatter,of,Finds,Isolated,Find,/,/,X,/,/,/,/,3,Unpublished,AKAP,3708811,2783028,,,,,,,,,,,,,,,,,,,,,,,,,
