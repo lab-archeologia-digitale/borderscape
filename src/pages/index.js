@@ -8,7 +8,7 @@ const IndexPage = () => (
     <Container>
       <h1>About the BORDERSCAPE Project WebGIS</h1>
 
-      <Slide />      
+      <Slide />
 
       <p>
         The BORDERSCAPE WebGIS databases and web app are outcomes of the{" "}
@@ -88,8 +88,18 @@ const IndexPage = () => (
       </p>
 
       <p>
-        For more information about the databases and the web app, see the open
-        data publication Siegel et al., forthcoming.
+        The dataset behing this portal is published on Zenodo: <br />
+        Siegel, Oren, Julian Bogdani, Alberto Urcia, Serena Nicolini, and Maria
+        Carmela Gatto. ‘The BORDERSCAPE Project Webgis Repository’. Zenodo,
+        2024.{" "}
+        <a
+          href="https://doi.org/10.5281/zenodo.10775678"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          https://doi.org/10.5281/zenodo.10775678
+        </a>
+        .
       </p>
 
       <h3>Bibliography</h3>

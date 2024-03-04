@@ -146,16 +146,37 @@ const FooterSection = () => {
             millennia BCE
           </p>
           <p className="my-1">
-            The BORDERSCAPE Project received funding from the Norwegian Financial
-            Mechanism 2014-2021 (grant no. POLS 2020/37/K/HS3/04097).
+            The BORDERSCAPE Project received funding from the Norwegian
+            Financial Mechanism 2014-2021 (grant no. POLS 2020/37/K/HS3/04097).
           </p>
+        </div>
+
+        <div className="text-center border-top mt-3 pt-3">
+          <a
+            href="https://zenodo.org/records/10775678"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              style={{ width: "150px" }}
+              src="https://about.zenodo.org/static/img/logos/zenodo-gradient-200.png"
+              alt="Data preserved in Zenodo"
+            />
+            <br />
+            All research data are preserved in Zenodo with Creative Commons
+            Attribution 4.0 International License
+            <br />
+            <img
+              src="https://zenodo.org/badge/DOI/10.5281/zenodo.10775678.svg"
+              alt="10.5281/zenodo.10775678"
+            />
+          </a>
         </div>
 
         <div className="text-center mt-3 pt-3 border-top">
           <p className="p-s-3">
             This site has been built with{" "}
-            <span style={{ color: "#1963f7" }}>♥</span> {" "}
-            by{" "}
+            <span style={{ color: "#1963f7" }}>♥</span> by{" "}
             <a
               href="https://purl.org/lad"
               target="_blank"
