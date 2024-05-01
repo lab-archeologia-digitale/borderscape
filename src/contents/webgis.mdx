@@ -70,7 +70,7 @@ import "react-leaflet-fullscreen/styles.css";
       name="Flooding Nile: 86"
       path2geojson="../data/flooding-nile.geojson"
       popupTemplate={
-        (attribs) => { return `<p><strong>${attribs.name}</strong>
+        (attribs) => { return `<p><strong>${attribs.Name}</strong>
         Level: ${attribs.level}` }
       }
       filter={ f => f.properties.level === 86 }
@@ -80,7 +80,7 @@ import "react-leaflet-fullscreen/styles.css";
       name="Flooding Nile: 94.5"
       path2geojson="../data/flooding-nile.geojson"
       popupTemplate={
-        (attribs) => { return `<p><strong>${attribs.name}</strong>
+        (attribs) => { return `<p><strong>${attribs.Name}</strong>
         Level: ${attribs.level}` }
       }
       filter={ f => f.properties.level === 94.5 }
@@ -92,13 +92,13 @@ import "react-leaflet-fullscreen/styles.css";
     
     <VectorLayer 
       name="Phase 1 (3800-3500 BCE)"
-      path2geojson="../data/sites.geojson"
+      path2geojson="../data/borderscape-sites.geojson"
       checked={true}
       fitToContent={ true }
       popupTemplate={
-        (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-        <br />— ${attribs.macrotype} > ${attribs.type}
-        <hr />${attribs.bibliography}` }
+        (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+        <br />— ${attribs.Macrotype} > ${attribs['Site Type']}
+        <hr />${attribs.Biblio}` }
       }
       pointToLayer={
         (f, ll) => {
@@ -114,7 +114,7 @@ import "react-leaflet-fullscreen/styles.css";
           }
           return L.circleMarker(ll, {
             radius: 4,
-            fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+            fillColor: mapType[f.properties.Macrotype] ? mapType[f.properties.Macrotype] : '#ebebeb',
             color: "#000",
             weight: 1,
             opacity: 1,
@@ -122,18 +122,18 @@ import "react-leaflet-fullscreen/styles.css";
           });
         }
       }
-        filter={f => (f.properties.ph1 === 'X') }
+        filter={f => (f.properties['Phase 1'] === '1') }
     />
 
     <VectorLayer 
       name="Phase 2 (3500-3300 BCE)"
-      path2geojson="../data/sites.geojson"
+      path2geojson="../data/borderscape-sites.geojson"
       checked={true}
       fitToContent={ true }
       popupTemplate={
-        (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-        <br />— ${attribs.macrotype} > ${attribs.type}
-        <hr />${attribs.bibliography}` }
+        (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+        <br />— ${attribs.Macrotype} > ${attribs['Site Type']}
+        <hr />${attribs.Biblio}` }
       }
       pointToLayer={
         (f, ll) => {
@@ -149,7 +149,7 @@ import "react-leaflet-fullscreen/styles.css";
           }
           return L.circleMarker(ll, {
             radius: 4,
-            fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+            fillColor: mapType[f.properties.Macrotype] ? mapType[f.properties.Macrotype] : '#ebebeb',
             color: "#000",
             weight: 1,
             opacity: 1,
@@ -157,18 +157,18 @@ import "react-leaflet-fullscreen/styles.css";
           });
         }
       }
-      filter={f => (f.properties.ph2 === 'X') }
+      filter={f => (f.properties['Phase 2'] === '1') }
     />
 
     <VectorLayer 
       name="Phase 3 (3300-3100 BCE)"
-      path2geojson="../data/sites.geojson"
+      path2geojson="../data/borderscape-sites.geojson"
       checked={true}
       fitToContent={ true }
       popupTemplate={
-        (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-        <br />— ${attribs.macrotype} > ${attribs.type}
-        <hr />${attribs.bibliography}` }
+        (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+        <br />— ${attribs.Macrotype} > ${attribs['Site Type']}
+        <hr />${attribs.Biblio}` }
       }
       pointToLayer={
         (f, ll) => {
@@ -184,7 +184,7 @@ import "react-leaflet-fullscreen/styles.css";
           }
           return L.circleMarker(ll, {
             radius: 4,
-            fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+            fillColor: mapType[f.properties.Macrotype] ? mapType[f.properties.Macrotype] : '#ebebeb',
             color: "#000",
             weight: 1,
             opacity: 1,
@@ -192,18 +192,18 @@ import "react-leaflet-fullscreen/styles.css";
           });
         }
       }
-      filter={f => (f.properties.ph3 === 'X') }
+      filter={f => (f.properties['Phase 3'] === '1') }
     />
     
     <VectorLayer 
       name="Phase 4 (3100-2650 BCE)"
-      path2geojson="../data/sites.geojson"
+      path2geojson="../data/borderscape-sites.geojson"
       checked={true}
       fitToContent={ true }
       popupTemplate={
-        (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-        <br />— ${attribs.macrotype} > ${attribs.type}
-        <hr />${attribs.bibliography}` }
+        (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+        <br />— ${attribs.Macrotype} > ${attribs['Site Type']}
+        <hr />${attribs.Biblio}` }
       }
       pointToLayer={
         (f, ll) => {
@@ -219,7 +219,7 @@ import "react-leaflet-fullscreen/styles.css";
           }
           return L.circleMarker(ll, {
             radius: 4,
-            fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+            fillColor: mapType[f.properties.Macrotype] ? mapType[f.properties.Macrotype] : '#ebebeb',
             color: "#000",
             weight: 1,
             opacity: 1,
@@ -227,18 +227,18 @@ import "react-leaflet-fullscreen/styles.css";
           });
         }
       }
-      filter={f => (f.properties.ph4 === 'X') }
+      filter={f => (f.properties['Phase 4'] === '1') }
     />
     
     <VectorLayer 
       name="Phase 5 (2650-2500 BCE)"
-      path2geojson="../data/sites.geojson"
+      path2geojson="../data/borderscape-sites.geojson"
       checked={true}
       fitToContent={ true }
       popupTemplate={
-        (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-        <br />— ${attribs.macrotype} > ${attribs.type}
-        <hr />${attribs.bibliography}` }
+        (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+        <br />— ${attribs.Macrotype} > ${attribs['Site Type']}
+        <hr />${attribs.Biblio}` }
       }
       pointToLayer={
         (f, ll) => {
@@ -254,7 +254,7 @@ import "react-leaflet-fullscreen/styles.css";
           }
           return L.circleMarker(ll, {
             radius: 4,
-            fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+            fillColor: mapType[f.properties.Macrotype] ? mapType[f.properties.Macrotype] : '#ebebeb',
             color: "#000",
             weight: 1,
             opacity: 1,
@@ -262,18 +262,18 @@ import "react-leaflet-fullscreen/styles.css";
           });
         }
       }
-      filter={f => (f.properties.ph5 === 'X') }
+      filter={f => (f.properties['Phase 5'] === '1') }
     />
 
     <VectorLayer 
       name="Phase 6 (2500-2300 BCE)"
-      path2geojson="../data/sites.geojson"
+      path2geojson="../data/borderscape-sites.geojson"
       checked={true}
       fitToContent={ true }
       popupTemplate={
-        (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-        <br />— ${attribs.macrotype} > ${attribs.type}
-        <hr />${attribs.bibliography}` }
+        (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+        <br />— ${attribs.Macrotype} > ${attribs['Site Type']}
+        <hr />${attribs.Biblio}` }
       }
       pointToLayer={
         (f, ll) => {
@@ -289,7 +289,7 @@ import "react-leaflet-fullscreen/styles.css";
           }
           return L.circleMarker(ll, {
             radius: 4,
-            fillColor: mapType[f.properties.macrotype] ? mapType[f.properties.macrotype] : '#ebebeb',
+            fillColor: mapType[f.properties.Macrotype] ? mapType[f.properties.Macrotype] : '#ebebeb',
             color: "#000",
             weight: 1,
             opacity: 1,
@@ -297,7 +297,7 @@ import "react-leaflet-fullscreen/styles.css";
           });
         }
       }
-      filter={f => (f.properties.ph6 === 'X') }
+      filter={f => (f.properties['Phase 6'] === '1') }
     />
 
 
@@ -324,11 +324,11 @@ import "react-leaflet-fullscreen/styles.css";
   
       <VectorLayer 
         name="Campsites"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -343,15 +343,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph1 === 'X' && f.properties.macrotype === 'Campsite') }
+        filter={f => (f.properties['Phase 1'] === '1' && f.properties.Macrotype === 'Campsite') }
       />
       <VectorLayer 
         name="Cemetery"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -366,15 +366,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph1 === 'X' && f.properties.macrotype === 'Cemetery') }
+        filter={f => (f.properties['Phase 1'] === '1' && f.properties.Macrotype === 'Cemetery') }
       />
       <VectorLayer 
         name="Inscription"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -389,15 +389,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph1 === 'X' && f.properties.macrotype === 'Inscription') }
+        filter={f => (f.properties['Phase 1'] === '1' && f.properties.Macrotype === 'Inscription') }
       />
       <VectorLayer 
         name="Isolated Building/Feature"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -412,15 +412,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph1 === 'X' && f.properties.macrotype === 'Isolated Building/Feature') }
+        filter={f => (f.properties['Phase 1'] === '1' && f.properties.Macrotype === 'Isolated Building/Feature') }
       />
       <VectorLayer 
         name="Isolated/Scatter of Finds"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -435,15 +435,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph1 === 'X' && f.properties.macrotype === 'Isolated/Scatter of Finds') }
+        filter={f => (f.properties['Phase 1'] === '1' && f.properties.Macrotype === 'Isolated/Scatter of Finds') }
       />
       <VectorLayer 
         name="Rock Art"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -458,15 +458,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph1 === 'X' && f.properties.macrotype === 'Rock Art') }
+        filter={f => (f.properties['Phase 1'] === '1' && f.properties.Macrotype === 'Rock Art') }
       />
       <VectorLayer 
         name="Settlement"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -481,7 +481,7 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph1 === 'X' && f.properties.macrotype === 'Settlement') }
+        filter={f => (f.properties['Phase 1'] === '1' && f.properties.Macrotype === 'Settlement') }
       />
 </MapComp>
   </Col>
@@ -496,11 +496,11 @@ import "react-leaflet-fullscreen/styles.css";
   
   <VectorLayer 
         name="Campsites"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -515,15 +515,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph2 === 'X' && f.properties.macrotype === 'Campsite') }
+        filter={f => (f.properties['Phase 2'] === '1' && f.properties.Macrotype === 'Campsite') }
       />
       <VectorLayer 
         name="Cemetery"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -538,15 +538,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph2 === 'X' && f.properties.macrotype === 'Cemetery') }
+        filter={f => (f.properties['Phase 2'] === '1' && f.properties.Macrotype === 'Cemetery') }
       />
       <VectorLayer 
         name="Inscription"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -561,15 +561,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph2 === 'X' && f.properties.macrotype === 'Inscription') }
+        filter={f => (f.properties['Phase 2'] === '1' && f.properties.Macrotype === 'Inscription') }
       />
       <VectorLayer 
         name="Isolated Building/Feature"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -584,15 +584,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph2 === 'X' && f.properties.macrotype === 'Isolated Building/Feature') }
+        filter={f => (f.properties['Phase 2'] === '1' && f.properties.Macrotype === 'Isolated Building/Feature') }
       />
       <VectorLayer 
         name="Isolated/Scatter of Finds"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -607,15 +607,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph2 === 'X' && f.properties.macrotype === 'Isolated/Scatter of Finds') }
+        filter={f => (f.properties['Phase 2'] === '1' && f.properties.Macrotype === 'Isolated/Scatter of Finds') }
       />
       <VectorLayer 
         name="Rock Art"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -630,15 +630,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph2 === 'X' && f.properties.macrotype === 'Rock Art') }
+        filter={f => (f.properties['Phase 2'] === '1' && f.properties.Macrotype === 'Rock Art') }
       />
       <VectorLayer 
         name="Settlement"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -653,7 +653,7 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph2 === 'X' && f.properties.macrotype === 'Settlement') }
+        filter={f => (f.properties['Phase 2'] === '1' && f.properties.Macrotype === 'Settlement') }
       />
 </MapComp>
   </Col>
@@ -670,11 +670,11 @@ import "react-leaflet-fullscreen/styles.css";
   
   <VectorLayer 
         name="Campsites"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -689,15 +689,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph3 === 'X' && f.properties.macrotype === 'Campsite') }
+        filter={f => (f.properties['Phase 3'] === '1' && f.properties.Macrotype === 'Campsite') }
       />
       <VectorLayer 
         name="Cemetery"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -712,15 +712,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph3 === 'X' && f.properties.macrotype === 'Cemetery') }
+        filter={f => (f.properties['Phase 3'] === '1' && f.properties.Macrotype === 'Cemetery') }
       />
       <VectorLayer 
         name="Inscription"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -735,15 +735,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph3 === 'X' && f.properties.macrotype === 'Inscription') }
+        filter={f => (f.properties['Phase 3'] === '1' && f.properties.Macrotype === 'Inscription') }
       />
       <VectorLayer 
         name="Isolated Building/Feature"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -758,15 +758,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph3 === 'X' && f.properties.macrotype === 'Isolated Building/Feature') }
+        filter={f => (f.properties['Phase 3'] === '1' && f.properties.Macrotype === 'Isolated Building/Feature') }
       />
       <VectorLayer 
         name="Isolated/Scatter of Finds"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -781,15 +781,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph3 === 'X' && f.properties.macrotype === 'Isolated/Scatter of Finds') }
+        filter={f => (f.properties['Phase 3'] === '1' && f.properties.Macrotype === 'Isolated/Scatter of Finds') }
       />
       <VectorLayer 
         name="Rock Art"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -804,15 +804,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph3 === 'X' && f.properties.macrotype === 'Rock Art') }
+        filter={f => (f.properties['Phase 3'] === '1' && f.properties.Macrotype === 'Rock Art') }
       />
       <VectorLayer 
         name="Settlement"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -827,7 +827,7 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph3 === 'X' && f.properties.macrotype === 'Settlement') }
+        filter={f => (f.properties['Phase 3'] === '1' && f.properties.Macrotype === 'Settlement') }
       />
 </MapComp>
   </Col>
@@ -845,11 +845,11 @@ import "react-leaflet-fullscreen/styles.css";
   
   <VectorLayer 
         name="Campsites"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -864,15 +864,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph4 === 'X' && f.properties.macrotype === 'Campsite') }
+        filter={f => (f.properties['Phase 4'] === '1' && f.properties.Macrotype === 'Campsite') }
       />
       <VectorLayer 
         name="Cemetery"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -887,15 +887,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph4 === 'X' && f.properties.macrotype === 'Cemetery') }
+        filter={f => (f.properties['Phase 4'] === '1' && f.properties.Macrotype === 'Cemetery') }
       />
       <VectorLayer 
         name="Inscription"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -910,15 +910,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph4 === 'X' && f.properties.macrotype === 'Inscription') }
+        filter={f => (f.properties['Phase 4'] === '1' && f.properties.Macrotype === 'Inscription') }
       />
       <VectorLayer 
         name="Isolated Building/Feature"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -933,15 +933,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph4 === 'X' && f.properties.macrotype === 'Isolated Building/Feature') }
+        filter={f => (f.properties['Phase 4'] === '1' && f.properties.Macrotype === 'Isolated Building/Feature') }
       />
       <VectorLayer 
         name="Isolated/Scatter of Finds"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -956,15 +956,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph4 === 'X' && f.properties.macrotype === 'Isolated/Scatter of Finds') }
+        filter={f => (f.properties['Phase 4'] === '1' && f.properties.Macrotype === 'Isolated/Scatter of Finds') }
       />
       <VectorLayer 
         name="Rock Art"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -979,15 +979,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph4 === 'X' && f.properties.macrotype === 'Rock Art') }
+        filter={f => (f.properties['Phase 4'] === '1' && f.properties.Macrotype === 'Rock Art') }
       />
       <VectorLayer 
         name="Settlement"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -1002,7 +1002,7 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph4 === 'X' && f.properties.macrotype === 'Settlement') }
+        filter={f => (f.properties['Phase 4'] === '1' && f.properties.Macrotype === 'Settlement') }
       />
 </MapComp>
   </Col>
@@ -1019,11 +1019,11 @@ import "react-leaflet-fullscreen/styles.css";
   
   <VectorLayer 
         name="Campsites"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -1038,15 +1038,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph5 === 'X' && f.properties.macrotype === 'Campsite') }
+        filter={f => (f.properties['Phase 5'] === '1' && f.properties.Macrotype === 'Campsite') }
       />
       <VectorLayer 
         name="Cemetery"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -1061,15 +1061,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph5 === 'X' && f.properties.macrotype === 'Cemetery') }
+        filter={f => (f.properties['Phase 5'] === '1' && f.properties.Macrotype === 'Cemetery') }
       />
       <VectorLayer 
         name="Inscription"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -1084,15 +1084,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph5 === 'X' && f.properties.macrotype === 'Inscription') }
+        filter={f => (f.properties['Phase 5'] === '1' && f.properties.Macrotype === 'Inscription') }
       />
       <VectorLayer 
         name="Isolated Building/Feature"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -1107,15 +1107,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph5 === 'X' && f.properties.macrotype === 'Isolated Building/Feature') }
+        filter={f => (f.properties['Phase 5'] === '1' && f.properties.Macrotype === 'Isolated Building/Feature') }
       />
       <VectorLayer 
         name="Isolated/Scatter of Finds"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -1130,15 +1130,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph5 === 'X' && f.properties.macrotype === 'Isolated/Scatter of Finds') }
+        filter={f => (f.properties['Phase 5'] === '1' && f.properties.Macrotype === 'Isolated/Scatter of Finds') }
       />
       <VectorLayer 
         name="Rock Art"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -1153,15 +1153,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph5 === 'X' && f.properties.macrotype === 'Rock Art') }
+        filter={f => (f.properties['Phase 5'] === '1' && f.properties.Macrotype === 'Rock Art') }
       />
       <VectorLayer 
         name="Settlement"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -1176,7 +1176,7 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph5 === 'X' && f.properties.macrotype === 'Settlement') }
+        filter={f => (f.properties['Phase 5'] === '1' && f.properties.Macrotype === 'Settlement') }
       />
 </MapComp>
   </Col>
@@ -1193,11 +1193,11 @@ import "react-leaflet-fullscreen/styles.css";
   
   <VectorLayer 
         name="Campsites"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -1212,15 +1212,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph6 === 'X' && f.properties.macrotype === 'Campsite') }
+        filter={f => (f.properties['Phase 6'] === '1' && f.properties.Macrotype === 'Campsite') }
       />
       <VectorLayer 
         name="Cemetery"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -1235,15 +1235,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph6 === 'X' && f.properties.macrotype === 'Cemetery') }
+        filter={f => (f.properties['Phase 6'] === '1' && f.properties.Macrotype === 'Cemetery') }
       />
       <VectorLayer 
         name="Inscription"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -1258,15 +1258,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph6 === 'X' && f.properties.macrotype === 'Inscription') }
+        filter={f => (f.properties['Phase 6'] === '1' && f.properties.Macrotype === 'Inscription') }
       />
       <VectorLayer 
         name="Isolated Building/Feature"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -1281,15 +1281,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph6 === 'X' && f.properties.macrotype === 'Isolated Building/Feature') }
+        filter={f => (f.properties['Phase 6'] === '1' && f.properties.Macrotype === 'Isolated Building/Feature') }
       />
       <VectorLayer 
         name="Isolated/Scatter of Finds"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -1304,15 +1304,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph6 === 'X' && f.properties.macrotype === 'Isolated/Scatter of Finds') }
+        filter={f => (f.properties['Phase 6'] === '1' && f.properties.Macrotype === 'Isolated/Scatter of Finds') }
       />
       <VectorLayer 
         name="Rock Art"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -1327,15 +1327,15 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph6 === 'X' && f.properties.macrotype === 'Rock Art') }
+        filter={f => (f.properties['Phase 6'] === '1' && f.properties.Macrotype === 'Rock Art') }
       />
       <VectorLayer 
         name="Settlement"
-        path2geojson="../data/sites.geojson"
+        path2geojson="../data/borderscape-sites.geojson"
         popupTemplate={
-          (attribs) => { return `<p><strong>${attribs.codex}. ${attribs.name} (${attribs.locality})</strong>
-          <br />— ${attribs.type}
-          <hr />${attribs.bibliography}` }
+          (attribs) => { return `<p><strong>${attribs.CODEX}. ${attribs.Name} (${attribs.Locality})</strong>
+          <br />— ${attribs['Site Type']}
+          <hr />${attribs.Biblio}` }
         }
         checked={true}
         pointToLayer={
@@ -1350,7 +1350,7 @@ import "react-leaflet-fullscreen/styles.css";
             });
           }
         }
-        filter={f => (f.properties.ph6 === 'X' && f.properties.macrotype === 'Settlement') }
+        filter={f => (f.properties['Phase 6'] === '1' && f.properties.Macrotype === 'Settlement') }
       />
 </MapComp>
   </Col>
